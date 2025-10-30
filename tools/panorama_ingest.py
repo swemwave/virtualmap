@@ -102,14 +102,33 @@ def configure_logging(verbose: bool) -> None:
     logging.basicConfig(level=level, format="[%(levelname)s] %(message)s")
 
 
+def resolve_input_folder(folder: Path) -> Path:
+    """Return an absolute path for *folder* relative to the current working dir."""
+
+    expanded = folder.expanduser()
+    if expanded.is_absolute():
+        return expanded
+    return (Path.cwd() / expanded).resolve()
+
+
 def collect_images(folder: Path) -> List[Path]:
-    if not folder.exists():
-        raise FileNotFoundError(f"Input folder {folder} does not exist")
+    resolved_folder = resolve_input_folder(folder)
+    if not resolved_folder.exists():
+        raise FileNotFoundError(
+            "Input folder does not exist. "
+            f"Checked {resolved_folder}."
+            " Ensure the path is correct relative to "
+            f"{Path.cwd()} or provide an absolute path."
+        )
     images = sorted(
-        [path for path in folder.iterdir() if path.suffix.lower() in SUPPORTED_EXTENSIONS]
+        [
+            path
+            for path in resolved_folder.iterdir()
+            if path.suffix.lower() in SUPPORTED_EXTENSIONS
+        ]
     )
     if not images:
-        raise FileNotFoundError(f"No supported images found in {folder}")
+        raise FileNotFoundError(f"No supported images found in {resolved_folder}")
     LOGGER.info("Found %d panoramas", len(images))
     return images
 
