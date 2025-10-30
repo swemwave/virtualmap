@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Virtual Wing Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Virtual Wing Explorer</h1>
+    <p class="tagline">Interactively explore the corridor imagery as if you were walking the route.</p>
+  </header>
+
+  <main class="app-main">
+    <section class="map-panel" aria-label="Top-down map">
+      <div class="map-toolbar">
+        <div class="legend">
+          <span class="legend-swatch legend-route"></span>
+          <span>Existing route</span>
+          <span class="legend-swatch legend-target"></span>
+          <span>Selected path</span>
+        </div>
+        <div class="route-selector">
+          <label>
+            Start
+            <select id="start-select"></select>
+          </label>
+          <label>
+            Destination
+            <select id="end-select"></select>
+          </label>
+          <button id="route-btn" type="button">Plan route</button>
+        </div>
+      </div>
+      <svg id="map-canvas" viewBox="0 0 100 100" role="img" aria-label="Top down layout of the captured wing"></svg>
+    </section>
+
+    <section class="viewer-panel" aria-label="First person view">
+      <div class="viewer-header">
+        <h2 id="viewer-title">Select a waypoint</h2>
+        <p id="viewer-meta" class="viewer-meta">Choose a marker on the map or use the navigation controls to move through the wing.</p>
+      </div>
+      <div class="viewer-image-wrapper">
+        <img id="viewer-image" alt="Waypoint preview" />
+      </div>
+      <div class="viewer-controls">
+        <button id="prev-btn" type="button" aria-label="Go to previous waypoint">◀ Previous</button>
+        <button id="next-btn" type="button" aria-label="Go to next waypoint">Next ▶</button>
+      </div>
+      <div class="viewer-notes" id="viewer-notes"></div>
+    </section>
+  </main>
+
+  <section class="app-footer">
+    <h3>Workflow guidance</h3>
+    <ol>
+      <li>Tap a waypoint on the map to load the corresponding first-person image.</li>
+      <li>Use the route planner to highlight an optimal path between two points.</li>
+      <li>When you capture additional rooms or wings, append them to <code>public/data/waypoints.json</code> and drop new imagery into <code>assets/images</code>.</li>
+      <li>Regenerate the layout using <code>scripts/update_waypoints.py</code> (coming soon) or edit the JSON manually with precise coordinates.</li>
+    </ol>
+  </section>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

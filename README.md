@@ -1,74 +1,42 @@
-# StanGrad Virtual Map
+# Virtual Wing Explorer
 
-An interactive first-person viewer for 360° panoramas captured on the 2nd floor near the
-MB Wing at SAIT. The site is designed for GitHub Pages hosting and includes a data-driven
-navigation graph, floor-plan overlay, and tooling to auto-classify new imagery.
-
-## Features
-
-- **Panorama viewer** powered by [Pannellum](https://pannellum.org/) for fast equirectangular rendering.
-- **Navigation graph** with connection buttons, filters, and floor-plan markers.
-- **Data-driven content** sourced from `data/panorama-map.json`, making it easy to update without touching HTML.
-- **Batch ingestion** script using open-source vision-language models to sort, rename, and annotate images.
+This repository packages corridor imagery into a lightweight, mobile-friendly viewer so you can explore a facility as if you were walking it in person. It combines a top-down graph of the captured path with a first-person photo browser and a routing assistant.
 
 ## Repository layout
 
 ```
-index.html                # Entry point for GitHub Pages
-assets/css/style.css      # Tailored interface styling
-assets/js/app.js          # Panorama viewer + navigation logic
-assets/images/            # Floor-plan artwork
-data/panorama-map.json    # Sample graph describing four linked panoramas
-tools/panorama_ingest.py  # AI-assisted ingestion utility
+public/
+  index.html         # Single-page app shell
+  styles.css         # Responsive styling for desktop and mobile
+  app.js             # Map rendering, image viewer, and routing logic
+  data/waypoints.json# Auto-generated list of waypoints and adjacency graph
+  assets/images/     # Renamed photo set organised as waypoint-XYZ.jpg
+scripts/
+  update_waypoints.py (placeholder for future automation)
 ```
 
-## Running locally
+## Viewing the map
 
-You can test the site locally with any static file server. Python's built-in server works
-well:
+From the repository root, serve the `public` directory with any static file server. For example using Python:
 
 ```bash
-python -m http.server 8000
+python -m http.server --directory public 5173
 ```
 
-Then open `http://localhost:8000` in a browser.
+Then open <http://localhost:5173> in a desktop or mobile browser. Tap waypoints on the map to open their first-person photographs and use the route planner to highlight the fastest path between two points.
 
-## Deploying to GitHub Pages
+## Updating the dataset
 
-1. Push the repository to GitHub.
-2. In the repository settings, enable **Pages** and select the `main` branch with `/ (root)`
-   as the folder.
-3. Wait for the deployment to finish, then access the published URL.
+1. Drop new photos into `public/assets/images` and follow the existing `waypoint-###.jpg` naming convention.
+2. Update `public/data/waypoints.json` with the new positions, adjacency, and metadata. The current file was generated as a serpentine placeholder—replace the coordinates with accurate survey data as you refine the map.
+3. Reload the web app to see the expanded coverage. The UI automatically ingests the new waypoints without additional code changes.
 
-## Updating `panorama-map.json`
+## Duplicate audit
 
-Each node in `data/panorama-map.json` requires:
+No duplicate image hashes were detected during the initial import. If you add more captures, re-run your preferred duplicate checker before committing.
 
-- `id`: Unique identifier (usually the file stem).
-- `title`: Friendly label shown in the UI.
-- `type`: One of `hallway`, `classroom`, or `intersection` (custom values are allowed).
-- `image`: Relative path to the panorama file.
-- `connections`: Array of node IDs that can be reached from this location.
-- Optional metadata such as `description`, `features`, and `position` for floor-plan markers.
+## Roadmap ideas
 
-Add as many nodes as needed. The viewer automatically lists them and draws floor-plan
-markers when `position` coordinates are supplied (values between `0` and `1`).
-
-## AI-assisted batch ingestion
-
-The `tools/panorama_ingest.py` script accelerates data entry by classifying panoramas and
-producing a fresh JSON document. It relies on the `open_clip_torch` and `torch` packages.
-
-```bash
-pip install open_clip_torch pillow torch
-python tools/panorama_ingest.py my-new-captures/ --rename --output data/panorama-map.json
-```
-
-Review the generated JSON afterwards to fine-tune metadata, adjust connections, and add
-floor-plan coordinates.
-
-## Floor plan artwork
-
-Replace `assets/images/floorplan-placeholder.svg` with an accurate diagram to align markers
-with real-world positions. The JSON file stores width and height metadata so you can supply
-CAD exports or scanned drawings at any resolution.
+- Replace the placeholder layout generator with a scripted import that reads SLAM or LiDAR outputs.
+- Attach compass headings to each waypoint to enable orientation-aware transitions.
+- Add annotations for rooms, hazards, or points of interest displayed both on the map and in the viewer.
