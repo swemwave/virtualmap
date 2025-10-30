@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StanGrad Virtual Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="title-group">
+        <h1>StanGrad Virtual Map</h1>
+        <p class="subtitle">Explore the 2nd Floor near MB Wing at SAIT</p>
+      </div>
+      <nav class="toolbar" aria-label="Viewer controls">
+        <div class="toolbar__group">
+          <label for="nodeSelect" class="toolbar__label">Location</label>
+          <select
+            id="nodeSelect"
+            class="toolbar__select"
+            aria-label="Panorama location selector"
+          ></select>
+        </div>
+        <div class="toolbar__group">
+          <label for="filterSelect" class="toolbar__label">Filter</label>
+          <select id="filterSelect" class="toolbar__select" aria-label="Location type filter">
+            <option value="all">All</option>
+            <option value="hallway">Hallways</option>
+            <option value="classroom">Classrooms</option>
+            <option value="intersection">Intersections</option>
+            <option value="lounge">Lounges</option>
+          </select>
+        </div>
+        <button id="fullscreenButton" class="toolbar__button" type="button">Fullscreen</button>
+      </nav>
+    </header>
+
+    <main class="layout">
+      <section class="viewer" aria-label="Panorama viewer">
+        <div id="panorama" class="viewer__canvas"></div>
+        <div class="viewer__meta" id="metadataPanel" aria-live="polite"></div>
+      </section>
+      <aside class="sidebar" aria-label="Navigation and floor plan">
+        <section class="panel">
+          <h2>Connections</h2>
+          <div id="connections" class="connections"></div>
+        </section>
+        <section class="panel">
+          <h2>Floor Plan</h2>
+          <div id="floorplan" class="floorplan" role="img" aria-label="Top-down map of the current floor">
+            <img id="floorplanImage" src="" alt="Floor plan" class="floorplan__image" />
+            <div id="floorplanMarkers" class="floorplan__markers" aria-hidden="true"></div>
+          </div>
+        </section>
+        <section class="panel panel--notes">
+          <h2>Notes</h2>
+          <p>
+            This interactive viewer loads panoramic imagery and metadata from
+            <code>data/panorama-map.json</code>. To add or update locations, edit the JSON
+            file or generate a new one using the ingestion tools described in the
+            project documentation.
+          </p>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Built for GitHub Pages deployment. Host this repository and enable Pages
+        to explore the space online.
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <script src="assets/js/app.js" type="module"></script>
+  </body>
+</html>
