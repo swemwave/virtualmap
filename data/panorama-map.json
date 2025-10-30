@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "StanGrad 2nd Floor",
+    "description": "Prototype navigation graph for the MB Wing level 2 immersive tour.",
+    "floorplan": {
+      "image": "assets/images/floorplan-placeholder.svg",
+      "width": 1200,
+      "height": 800
+    }
+  },
+  "nodes": [
+    {
+      "id": "IMG_20251006_190240_00_003",
+      "title": "Entrance Corridor",
+      "type": "hallway",
+      "description": "Primary hallway leading from the stairwell toward classrooms 201-205.",
+      "image": "IMG_20251006_190240_00_003.jpg",
+      "position": { "x": 0.35, "y": 0.55 },
+      "defaultView": { "pitch": 0, "yaw": 0, "hfov": 110 },
+      "connections": [
+        "IMG_20251006_190342_00_004",
+        "IMG_20251006_190556_00_007"
+      ],
+      "features": ["hallway", "stairwell", "directory"]
+    },
+    {
+      "id": "IMG_20251006_190342_00_004",
+      "title": "Hallway Junction",
+      "type": "intersection",
+      "description": "Intersection that branches toward MB classrooms and the collaborative lounge.",
+      "image": "IMG_20251006_190342_00_004.jpg",
+      "position": { "x": 0.52, "y": 0.50 },
+      "defaultView": { "pitch": 2, "yaw": 45, "hfov": 105 },
+      "connections": [
+        "IMG_20251006_190240_00_003",
+        "IMG_20251006_190410_00_005",
+        "IMG_20251006_190556_00_007"
+      ],
+      "features": ["intersection", "classroom corridor"]
+    },
+    {
+      "id": "IMG_20251006_190410_00_005",
+      "title": "Classroom Entry",
+      "type": "classroom",
+      "description": "View toward classroom MB-207 entrance with signage and seating alcove.",
+      "image": "IMG_20251006_190410_00_005.jpg",
+      "position": { "x": 0.66, "y": 0.47 },
+      "defaultView": { "pitch": -1, "yaw": -30, "hfov": 100 },
+      "connections": [
+        "IMG_20251006_190342_00_004"
+      ],
+      "features": ["classroom", "door", "signage"]
+    },
+    {
+      "id": "IMG_20251006_190556_00_007",
+      "title": "Lounge Overlook",
+      "type": "lounge",
+      "description": "Overlook of the central lounge area with natural light and seating clusters.",
+      "image": "IMG_20251006_190556_00_007.jpg",
+      "position": { "x": 0.45, "y": 0.35 },
+      "defaultView": { "pitch": -3, "yaw": 120, "hfov": 95 },
+      "connections": [
+        "IMG_20251006_190240_00_003",
+        "IMG_20251006_190342_00_004"
+      ],
+      "features": ["lounge", "windows"]
+    }
+  ]
+}
