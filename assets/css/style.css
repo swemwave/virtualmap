@@ -1,17 +1,11 @@
-* {
-  box-sizing: border-box;
-}
-
 :root {
   color-scheme: light dark;
   --bg: #0f172a;
   --bg-alt: #1e293b;
-  --bg-soft: rgba(15, 23, 42, 0.85);
   --text: #e2e8f0;
   --text-muted: #94a3b8;
   --accent: #38bdf8;
   --accent-strong: #0ea5e9;
-  --accent-soft: rgba(56, 189, 248, 0.15);
   --border: rgba(148, 163, 184, 0.3);
   font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
 }
@@ -21,7 +15,8 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background: var(--bg);
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 55%),
+    var(--bg);
   color: var(--text);
 }
 
@@ -29,19 +24,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  position: relative;
-  padding: 0 1.5rem 1.5rem;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: radial-gradient(circle at 12% 18%, rgba(56, 189, 248, 0.18), transparent 45%),
-    radial-gradient(circle at 82% 8%, rgba(14, 165, 233, 0.15), transparent 50%),
-    linear-gradient(180deg, rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.94));
-  pointer-events: none;
-  z-index: -1;
 }
 
 .top-bar {
@@ -50,14 +32,11 @@ body::before {
   align-items: center;
   padding: 1.25rem 1.75rem;
   border-bottom: 1px solid var(--border);
-  background: rgba(15, 23, 42, 0.92);
-  backdrop-filter: blur(18px);
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(16px);
   position: sticky;
   top: 0;
   z-index: 10;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
 }
 
 .title-group h1 {
@@ -74,43 +53,26 @@ body::before {
 
 .toolbar {
   display: flex;
-  gap: 1rem;
-  align-items: flex-end;
-  flex-wrap: wrap;
-}
-
-.toolbar__group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  min-width: 180px;
-  flex: 1 1 180px;
+  gap: 0.75rem;
+  align-items: center;
 }
 
 .toolbar__label {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  font-size: 0.85rem;
   color: var(--text-muted);
 }
 
 .toolbar__select,
 .toolbar__button {
   appearance: none;
-  padding: 0.55rem 0.85rem;
-  border-radius: 0.65rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.5rem;
   border: 1px solid var(--border);
-  background: rgba(30, 41, 59, 0.78);
+  background: rgba(30, 41, 59, 0.8);
   color: var(--text);
   font-size: 0.9rem;
   cursor: pointer;
-  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
-}
-
-.toolbar__button {
-  align-self: flex-start;
-  font-weight: 600;
-  letter-spacing: 0.03em;
+  transition: border-color 0.2s ease, background 0.2s ease;
 }
 
 .toolbar__select:focus,
@@ -119,8 +81,7 @@ body::before {
 .toolbar__button:hover {
   border-color: var(--accent);
   outline: none;
-  background: rgba(56, 189, 248, 0.25);
-  transform: translateY(-1px);
+  background: rgba(56, 189, 248, 0.2);
 }
 
 .layout {
@@ -129,18 +90,15 @@ body::before {
   grid-template-columns: minmax(0, 3fr) minmax(320px, 1fr);
   gap: 1.5rem;
   padding: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
 }
-
 
 .viewer {
   position: relative;
-  border-radius: 1.1rem;
+  border-radius: 1rem;
   overflow: hidden;
-  border: 1px solid rgba(148, 163, 184, 0.2);
-  box-shadow: 0 25px 50px -18px rgba(15, 23, 42, 0.65);
-  background: rgba(15, 23, 42, 0.76);
+  border: 1px solid var(--border);
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.45);
+  background: rgba(15, 23, 42, 0.75);
 }
 
 .viewer__canvas {
@@ -148,65 +106,41 @@ body::before {
   height: clamp(320px, 65vh, 640px);
 }
 
-
 .viewer__meta {
   position: absolute;
-  bottom: 1.25rem;
-  left: 1.25rem;
-  padding: 1rem 1.2rem;
-  border-radius: 0.9rem;
-  background: rgba(15, 23, 42, 0.78);
-  border: 1px solid rgba(56, 189, 248, 0.4);
-  box-shadow: 0 18px 40px -18px rgba(15, 23, 42, 0.95);
-  backdrop-filter: blur(14px);
-  max-width: min(420px, 92%);
-  font-size: 0.92rem;
-  line-height: 1.5;
-}
-
-.meta__eyebrow {
-  margin: 0 0 0.35rem 0;
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
+  bottom: 1rem;
+  left: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  backdrop-filter: blur(8px);
+  max-width: min(420px, 90%);
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 .meta__title {
-  margin: 0 0 0.45rem 0;
-  font-size: 1.35rem;
-  font-weight: 600;
+  margin: 0 0 0.35rem 0;
+  font-size: 1.05rem;
 }
 
 .meta__type {
-  display: none;
+  margin: 0 0 0.5rem 0;
+  color: var(--accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .meta__description {
-  margin: 0 0 0.9rem 0;
-  color: var(--text-muted);
+  margin: 0 0 0.5rem 0;
 }
 
 .meta__features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
   margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.meta__tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  border: 1px solid rgba(56, 189, 248, 0.25);
-  color: var(--text);
-  font-size: 0.75rem;
-  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  font-size: 0.85rem;
 }
 
 .sidebar {
@@ -217,23 +151,22 @@ body::before {
 
 .panel {
   border-radius: 1rem;
-  padding: 1.35rem;
-  background: var(--bg-soft);
+  padding: 1.25rem;
+  background: rgba(15, 23, 42, 0.78);
   border: 1px solid var(--border);
-  box-shadow: 0 18px 35px -28px rgba(15, 23, 42, 1);
+  box-shadow: 0 10px 30px -15px rgba(15, 23, 42, 0.9);
 }
 
 .panel h2 {
   margin-top: 0;
   font-size: 1.1rem;
   letter-spacing: 0.02em;
-  color: var(--text);
 }
 
 .connections {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
 }
 
 .connections__empty {
@@ -243,15 +176,14 @@ body::before {
 }
 
 .connection-button {
-  padding: 0.5rem 0.8rem;
-  border-radius: 0.75rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
   border: 1px solid var(--border);
-  background: rgba(30, 41, 59, 0.88);
+  background: rgba(30, 41, 59, 0.85);
   color: var(--text);
   font-size: 0.85rem;
   cursor: pointer;
-  text-align: left;
-  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .connection-button:hover,
@@ -259,15 +191,14 @@ body::before {
   transform: translateY(-1px);
   border-color: var(--accent);
   outline: none;
-  background: rgba(56, 189, 248, 0.12);
 }
 
 .floorplan {
   position: relative;
-  border-radius: 0.85rem;
+  border-radius: 0.75rem;
   overflow: hidden;
-  border: 1px dashed rgba(148, 163, 184, 0.4);
-  background: rgba(15, 23, 42, 0.58);
+  border: 1px dashed rgba(148, 163, 184, 0.35);
+  background: rgba(15, 23, 42, 0.6);
   aspect-ratio: 3 / 2;
 }
 
@@ -293,7 +224,6 @@ body::before {
   background: var(--accent);
   box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25);
   cursor: pointer;
-  transition: box-shadow 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
 }
 
 .floorplan__marker--active {
@@ -304,7 +234,6 @@ body::before {
 .floorplan__marker:hover,
 .floorplan__marker:focus {
   box-shadow: 0 0 0 8px rgba(56, 189, 248, 0.45);
-  transform: translate(-50%, -50%) scale(1.05);
 }
 
 .panel--notes p {
@@ -316,17 +245,11 @@ body::before {
 
 .footer {
   text-align: center;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   color: var(--text-muted);
   font-size: 0.85rem;
   border-top: 1px solid var(--border);
-  background: rgba(15, 23, 42, 0.92);
-  margin-top: 2rem;
-  border-radius: 1rem;
-  max-width: 1200px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  background: rgba(15, 23, 42, 0.9);
 }
 
 @media (max-width: 1100px) {
@@ -358,10 +281,6 @@ body::before {
 
   .toolbar__select {
     flex: 1 1 140px;
-  }
-
-  .toolbar__button {
-    width: 100%;
   }
 
   .layout {

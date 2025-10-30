@@ -1,0 +1,1880 @@
+{
+  "meta": {
+    "generated": true,
+    "description": "Linear serpentine layout auto-generated from image sequence.",
+    "columns": 13,
+    "rows": 9
+  },
+  "nodes": [
+    {
+      "id": "wp-001",
+      "name": "Waypoint 001",
+      "zone": "Wing A",
+      "corridor": "Corridor 1",
+      "position": {
+        "x": 5.0,
+        "y": 5.0
+      },
+      "image": "assets/images/waypoint-001.jpg",
+      "neighbors": [
+        "wp-002"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-002",
+      "name": "Waypoint 002",
+      "zone": "Wing A",
+      "corridor": "Corridor 1",
+      "position": {
+        "x": 12.5,
+        "y": 5.0
+      },
+      "image": "assets/images/waypoint-002.jpg",
+      "neighbors": [
+        "wp-001",
+        "wp-003"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-003",
+      "name": "Waypoint 003",
+      "zone": "Wing A",
+      "corridor": "Corridor 1",
+      "position": {
+        "x": 20.0,
+        "y": 5.0
+      },
+      "image": "assets/images/waypoint-003.jpg",
+      "neighbors": [
+        "wp-002",
+        "wp-004"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-004",
+      "name": "Waypoint 004",
+      "zone": "Wing A",
+      "corridor": "Corridor 1",
+      "position": {
+        "x": 27.5,
+        "y": 5.0
+      },
+      "image": "assets/images/waypoint-004.jpg",
+      "neighbors": [
+        "wp-003",
+        "wp-005"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-005",
+      "name": "Waypoint 005",
+      "zone": "Wing A",
+      "corridor": "Corridor 1",
+      "position": {
+        "x": 35.0,
+        "y": 5.0
+      },
+      "image": "assets/images/waypoint-005.jpg",
+      "neighbors": [
+        "wp-004",
+        "wp-006"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-006",
+      "name": "Waypoint 006",
+      "zone": "Wing A",
+      "corridor": "Corridor 1",
+      "position": {
+        "x": 42.5,
+        "y": 5.0
+      },
+      "image": "assets/images/waypoint-006.jpg",
+      "neighbors": [
+        "wp-005",
+        "wp-007"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-007",
+      "name": "Waypoint 007",
+      "zone": "Wing A",
+      "corridor": "Corridor 1",
+      "position": {
+        "x": 50.0,
+        "y": 5.0
+      },
+      "image": "assets/images/waypoint-007.jpg",
+      "neighbors": [
+        "wp-006",
+        "wp-008"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-008",
+      "name": "Waypoint 008",
+      "zone": "Wing A",
+      "corridor": "Corridor 1",
+      "position": {
+        "x": 57.5,
+        "y": 5.0
+      },
+      "image": "assets/images/waypoint-008.jpg",
+      "neighbors": [
+        "wp-007",
+        "wp-009"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-009",
+      "name": "Waypoint 009",
+      "zone": "Wing A",
+      "corridor": "Corridor 1",
+      "position": {
+        "x": 65.0,
+        "y": 5.0
+      },
+      "image": "assets/images/waypoint-009.jpg",
+      "neighbors": [
+        "wp-008",
+        "wp-010"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-010",
+      "name": "Waypoint 010",
+      "zone": "Wing A",
+      "corridor": "Corridor 1",
+      "position": {
+        "x": 72.5,
+        "y": 5.0
+      },
+      "image": "assets/images/waypoint-010.jpg",
+      "neighbors": [
+        "wp-009",
+        "wp-011"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-011",
+      "name": "Waypoint 011",
+      "zone": "Wing A",
+      "corridor": "Corridor 1",
+      "position": {
+        "x": 80.0,
+        "y": 5.0
+      },
+      "image": "assets/images/waypoint-011.jpg",
+      "neighbors": [
+        "wp-010",
+        "wp-012"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-012",
+      "name": "Waypoint 012",
+      "zone": "Wing A",
+      "corridor": "Corridor 1",
+      "position": {
+        "x": 87.5,
+        "y": 5.0
+      },
+      "image": "assets/images/waypoint-012.jpg",
+      "neighbors": [
+        "wp-011",
+        "wp-013"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-013",
+      "name": "Waypoint 013",
+      "zone": "Wing A",
+      "corridor": "Corridor 1",
+      "position": {
+        "x": 95.0,
+        "y": 5.0
+      },
+      "image": "assets/images/waypoint-013.jpg",
+      "neighbors": [
+        "wp-012",
+        "wp-014"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-014",
+      "name": "Waypoint 014",
+      "zone": "Wing A",
+      "corridor": "Corridor 2",
+      "position": {
+        "x": 95.0,
+        "y": 16.25
+      },
+      "image": "assets/images/waypoint-014.jpg",
+      "neighbors": [
+        "wp-013",
+        "wp-015"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-015",
+      "name": "Waypoint 015",
+      "zone": "Wing A",
+      "corridor": "Corridor 2",
+      "position": {
+        "x": 87.5,
+        "y": 16.25
+      },
+      "image": "assets/images/waypoint-015.jpg",
+      "neighbors": [
+        "wp-014",
+        "wp-016"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-016",
+      "name": "Waypoint 016",
+      "zone": "Wing A",
+      "corridor": "Corridor 2",
+      "position": {
+        "x": 80.0,
+        "y": 16.25
+      },
+      "image": "assets/images/waypoint-016.jpg",
+      "neighbors": [
+        "wp-015",
+        "wp-017"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-017",
+      "name": "Waypoint 017",
+      "zone": "Wing A",
+      "corridor": "Corridor 2",
+      "position": {
+        "x": 72.5,
+        "y": 16.25
+      },
+      "image": "assets/images/waypoint-017.jpg",
+      "neighbors": [
+        "wp-016",
+        "wp-018"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-018",
+      "name": "Waypoint 018",
+      "zone": "Wing A",
+      "corridor": "Corridor 2",
+      "position": {
+        "x": 65.0,
+        "y": 16.25
+      },
+      "image": "assets/images/waypoint-018.jpg",
+      "neighbors": [
+        "wp-017",
+        "wp-019"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-019",
+      "name": "Waypoint 019",
+      "zone": "Wing A",
+      "corridor": "Corridor 2",
+      "position": {
+        "x": 57.5,
+        "y": 16.25
+      },
+      "image": "assets/images/waypoint-019.jpg",
+      "neighbors": [
+        "wp-018",
+        "wp-020"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-020",
+      "name": "Waypoint 020",
+      "zone": "Wing A",
+      "corridor": "Corridor 2",
+      "position": {
+        "x": 50.0,
+        "y": 16.25
+      },
+      "image": "assets/images/waypoint-020.jpg",
+      "neighbors": [
+        "wp-019",
+        "wp-021"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-021",
+      "name": "Waypoint 021",
+      "zone": "Wing A",
+      "corridor": "Corridor 2",
+      "position": {
+        "x": 42.5,
+        "y": 16.25
+      },
+      "image": "assets/images/waypoint-021.jpg",
+      "neighbors": [
+        "wp-020",
+        "wp-022"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-022",
+      "name": "Waypoint 022",
+      "zone": "Wing A",
+      "corridor": "Corridor 2",
+      "position": {
+        "x": 35.0,
+        "y": 16.25
+      },
+      "image": "assets/images/waypoint-022.jpg",
+      "neighbors": [
+        "wp-021",
+        "wp-023"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-023",
+      "name": "Waypoint 023",
+      "zone": "Wing A",
+      "corridor": "Corridor 2",
+      "position": {
+        "x": 27.5,
+        "y": 16.25
+      },
+      "image": "assets/images/waypoint-023.jpg",
+      "neighbors": [
+        "wp-022",
+        "wp-024"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-024",
+      "name": "Waypoint 024",
+      "zone": "Wing A",
+      "corridor": "Corridor 2",
+      "position": {
+        "x": 20.0,
+        "y": 16.25
+      },
+      "image": "assets/images/waypoint-024.jpg",
+      "neighbors": [
+        "wp-023",
+        "wp-025"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-025",
+      "name": "Waypoint 025",
+      "zone": "Wing A",
+      "corridor": "Corridor 2",
+      "position": {
+        "x": 12.5,
+        "y": 16.25
+      },
+      "image": "assets/images/waypoint-025.jpg",
+      "neighbors": [
+        "wp-024",
+        "wp-026"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-026",
+      "name": "Waypoint 026",
+      "zone": "Wing A",
+      "corridor": "Corridor 2",
+      "position": {
+        "x": 5.0,
+        "y": 16.25
+      },
+      "image": "assets/images/waypoint-026.jpg",
+      "neighbors": [
+        "wp-025",
+        "wp-027"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-027",
+      "name": "Waypoint 027",
+      "zone": "Wing A",
+      "corridor": "Corridor 3",
+      "position": {
+        "x": 5.0,
+        "y": 27.5
+      },
+      "image": "assets/images/waypoint-027.jpg",
+      "neighbors": [
+        "wp-026",
+        "wp-028"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-028",
+      "name": "Waypoint 028",
+      "zone": "Wing A",
+      "corridor": "Corridor 3",
+      "position": {
+        "x": 12.5,
+        "y": 27.5
+      },
+      "image": "assets/images/waypoint-028.jpg",
+      "neighbors": [
+        "wp-027",
+        "wp-029"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-029",
+      "name": "Waypoint 029",
+      "zone": "Wing A",
+      "corridor": "Corridor 3",
+      "position": {
+        "x": 20.0,
+        "y": 27.5
+      },
+      "image": "assets/images/waypoint-029.jpg",
+      "neighbors": [
+        "wp-028",
+        "wp-030"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-030",
+      "name": "Waypoint 030",
+      "zone": "Wing A",
+      "corridor": "Corridor 3",
+      "position": {
+        "x": 27.5,
+        "y": 27.5
+      },
+      "image": "assets/images/waypoint-030.jpg",
+      "neighbors": [
+        "wp-029",
+        "wp-031"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-031",
+      "name": "Waypoint 031",
+      "zone": "Wing A",
+      "corridor": "Corridor 3",
+      "position": {
+        "x": 35.0,
+        "y": 27.5
+      },
+      "image": "assets/images/waypoint-031.jpg",
+      "neighbors": [
+        "wp-030",
+        "wp-032"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-032",
+      "name": "Waypoint 032",
+      "zone": "Wing A",
+      "corridor": "Corridor 3",
+      "position": {
+        "x": 42.5,
+        "y": 27.5
+      },
+      "image": "assets/images/waypoint-032.jpg",
+      "neighbors": [
+        "wp-031",
+        "wp-033"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-033",
+      "name": "Waypoint 033",
+      "zone": "Wing A",
+      "corridor": "Corridor 3",
+      "position": {
+        "x": 50.0,
+        "y": 27.5
+      },
+      "image": "assets/images/waypoint-033.jpg",
+      "neighbors": [
+        "wp-032",
+        "wp-034"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-034",
+      "name": "Waypoint 034",
+      "zone": "Wing A",
+      "corridor": "Corridor 3",
+      "position": {
+        "x": 57.5,
+        "y": 27.5
+      },
+      "image": "assets/images/waypoint-034.jpg",
+      "neighbors": [
+        "wp-033",
+        "wp-035"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-035",
+      "name": "Waypoint 035",
+      "zone": "Wing A",
+      "corridor": "Corridor 3",
+      "position": {
+        "x": 65.0,
+        "y": 27.5
+      },
+      "image": "assets/images/waypoint-035.jpg",
+      "neighbors": [
+        "wp-034",
+        "wp-036"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-036",
+      "name": "Waypoint 036",
+      "zone": "Wing A",
+      "corridor": "Corridor 3",
+      "position": {
+        "x": 72.5,
+        "y": 27.5
+      },
+      "image": "assets/images/waypoint-036.jpg",
+      "neighbors": [
+        "wp-035",
+        "wp-037"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-037",
+      "name": "Waypoint 037",
+      "zone": "Wing A",
+      "corridor": "Corridor 3",
+      "position": {
+        "x": 80.0,
+        "y": 27.5
+      },
+      "image": "assets/images/waypoint-037.jpg",
+      "neighbors": [
+        "wp-036",
+        "wp-038"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-038",
+      "name": "Waypoint 038",
+      "zone": "Wing A",
+      "corridor": "Corridor 3",
+      "position": {
+        "x": 87.5,
+        "y": 27.5
+      },
+      "image": "assets/images/waypoint-038.jpg",
+      "neighbors": [
+        "wp-037",
+        "wp-039"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-039",
+      "name": "Waypoint 039",
+      "zone": "Wing A",
+      "corridor": "Corridor 3",
+      "position": {
+        "x": 95.0,
+        "y": 27.5
+      },
+      "image": "assets/images/waypoint-039.jpg",
+      "neighbors": [
+        "wp-038",
+        "wp-040"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-040",
+      "name": "Waypoint 040",
+      "zone": "Wing B",
+      "corridor": "Corridor 4",
+      "position": {
+        "x": 95.0,
+        "y": 38.75
+      },
+      "image": "assets/images/waypoint-040.jpg",
+      "neighbors": [
+        "wp-039",
+        "wp-041"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-041",
+      "name": "Waypoint 041",
+      "zone": "Wing B",
+      "corridor": "Corridor 4",
+      "position": {
+        "x": 87.5,
+        "y": 38.75
+      },
+      "image": "assets/images/waypoint-041.jpg",
+      "neighbors": [
+        "wp-040",
+        "wp-042"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-042",
+      "name": "Waypoint 042",
+      "zone": "Wing B",
+      "corridor": "Corridor 4",
+      "position": {
+        "x": 80.0,
+        "y": 38.75
+      },
+      "image": "assets/images/waypoint-042.jpg",
+      "neighbors": [
+        "wp-041",
+        "wp-043"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-043",
+      "name": "Waypoint 043",
+      "zone": "Wing B",
+      "corridor": "Corridor 4",
+      "position": {
+        "x": 72.5,
+        "y": 38.75
+      },
+      "image": "assets/images/waypoint-043.jpg",
+      "neighbors": [
+        "wp-042",
+        "wp-044"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-044",
+      "name": "Waypoint 044",
+      "zone": "Wing B",
+      "corridor": "Corridor 4",
+      "position": {
+        "x": 65.0,
+        "y": 38.75
+      },
+      "image": "assets/images/waypoint-044.jpg",
+      "neighbors": [
+        "wp-043",
+        "wp-045"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-045",
+      "name": "Waypoint 045",
+      "zone": "Wing B",
+      "corridor": "Corridor 4",
+      "position": {
+        "x": 57.5,
+        "y": 38.75
+      },
+      "image": "assets/images/waypoint-045.jpg",
+      "neighbors": [
+        "wp-044",
+        "wp-046"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-046",
+      "name": "Waypoint 046",
+      "zone": "Wing B",
+      "corridor": "Corridor 4",
+      "position": {
+        "x": 50.0,
+        "y": 38.75
+      },
+      "image": "assets/images/waypoint-046.jpg",
+      "neighbors": [
+        "wp-045",
+        "wp-047"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-047",
+      "name": "Waypoint 047",
+      "zone": "Wing B",
+      "corridor": "Corridor 4",
+      "position": {
+        "x": 42.5,
+        "y": 38.75
+      },
+      "image": "assets/images/waypoint-047.jpg",
+      "neighbors": [
+        "wp-046",
+        "wp-048"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-048",
+      "name": "Waypoint 048",
+      "zone": "Wing B",
+      "corridor": "Corridor 4",
+      "position": {
+        "x": 35.0,
+        "y": 38.75
+      },
+      "image": "assets/images/waypoint-048.jpg",
+      "neighbors": [
+        "wp-047",
+        "wp-049"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-049",
+      "name": "Waypoint 049",
+      "zone": "Wing B",
+      "corridor": "Corridor 4",
+      "position": {
+        "x": 27.5,
+        "y": 38.75
+      },
+      "image": "assets/images/waypoint-049.jpg",
+      "neighbors": [
+        "wp-048",
+        "wp-050"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-050",
+      "name": "Waypoint 050",
+      "zone": "Wing B",
+      "corridor": "Corridor 4",
+      "position": {
+        "x": 20.0,
+        "y": 38.75
+      },
+      "image": "assets/images/waypoint-050.jpg",
+      "neighbors": [
+        "wp-049",
+        "wp-051"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-051",
+      "name": "Waypoint 051",
+      "zone": "Wing B",
+      "corridor": "Corridor 4",
+      "position": {
+        "x": 12.5,
+        "y": 38.75
+      },
+      "image": "assets/images/waypoint-051.jpg",
+      "neighbors": [
+        "wp-050",
+        "wp-052"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-052",
+      "name": "Waypoint 052",
+      "zone": "Wing B",
+      "corridor": "Corridor 4",
+      "position": {
+        "x": 5.0,
+        "y": 38.75
+      },
+      "image": "assets/images/waypoint-052.jpg",
+      "neighbors": [
+        "wp-051",
+        "wp-053"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-053",
+      "name": "Waypoint 053",
+      "zone": "Wing B",
+      "corridor": "Corridor 5",
+      "position": {
+        "x": 5.0,
+        "y": 50.0
+      },
+      "image": "assets/images/waypoint-053.jpg",
+      "neighbors": [
+        "wp-052",
+        "wp-054"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-054",
+      "name": "Waypoint 054",
+      "zone": "Wing B",
+      "corridor": "Corridor 5",
+      "position": {
+        "x": 12.5,
+        "y": 50.0
+      },
+      "image": "assets/images/waypoint-054.jpg",
+      "neighbors": [
+        "wp-053",
+        "wp-055"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-055",
+      "name": "Waypoint 055",
+      "zone": "Wing B",
+      "corridor": "Corridor 5",
+      "position": {
+        "x": 20.0,
+        "y": 50.0
+      },
+      "image": "assets/images/waypoint-055.jpg",
+      "neighbors": [
+        "wp-054",
+        "wp-056"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-056",
+      "name": "Waypoint 056",
+      "zone": "Wing B",
+      "corridor": "Corridor 5",
+      "position": {
+        "x": 27.5,
+        "y": 50.0
+      },
+      "image": "assets/images/waypoint-056.jpg",
+      "neighbors": [
+        "wp-055",
+        "wp-057"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-057",
+      "name": "Waypoint 057",
+      "zone": "Wing B",
+      "corridor": "Corridor 5",
+      "position": {
+        "x": 35.0,
+        "y": 50.0
+      },
+      "image": "assets/images/waypoint-057.jpg",
+      "neighbors": [
+        "wp-056",
+        "wp-058"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-058",
+      "name": "Waypoint 058",
+      "zone": "Wing B",
+      "corridor": "Corridor 5",
+      "position": {
+        "x": 42.5,
+        "y": 50.0
+      },
+      "image": "assets/images/waypoint-058.jpg",
+      "neighbors": [
+        "wp-057",
+        "wp-059"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-059",
+      "name": "Waypoint 059",
+      "zone": "Wing B",
+      "corridor": "Corridor 5",
+      "position": {
+        "x": 50.0,
+        "y": 50.0
+      },
+      "image": "assets/images/waypoint-059.jpg",
+      "neighbors": [
+        "wp-058",
+        "wp-060"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-060",
+      "name": "Waypoint 060",
+      "zone": "Wing B",
+      "corridor": "Corridor 5",
+      "position": {
+        "x": 57.5,
+        "y": 50.0
+      },
+      "image": "assets/images/waypoint-060.jpg",
+      "neighbors": [
+        "wp-059",
+        "wp-061"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-061",
+      "name": "Waypoint 061",
+      "zone": "Wing B",
+      "corridor": "Corridor 5",
+      "position": {
+        "x": 65.0,
+        "y": 50.0
+      },
+      "image": "assets/images/waypoint-061.jpg",
+      "neighbors": [
+        "wp-060",
+        "wp-062"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-062",
+      "name": "Waypoint 062",
+      "zone": "Wing B",
+      "corridor": "Corridor 5",
+      "position": {
+        "x": 72.5,
+        "y": 50.0
+      },
+      "image": "assets/images/waypoint-062.jpg",
+      "neighbors": [
+        "wp-061",
+        "wp-063"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-063",
+      "name": "Waypoint 063",
+      "zone": "Wing B",
+      "corridor": "Corridor 5",
+      "position": {
+        "x": 80.0,
+        "y": 50.0
+      },
+      "image": "assets/images/waypoint-063.jpg",
+      "neighbors": [
+        "wp-062",
+        "wp-064"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-064",
+      "name": "Waypoint 064",
+      "zone": "Wing B",
+      "corridor": "Corridor 5",
+      "position": {
+        "x": 87.5,
+        "y": 50.0
+      },
+      "image": "assets/images/waypoint-064.jpg",
+      "neighbors": [
+        "wp-063",
+        "wp-065"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-065",
+      "name": "Waypoint 065",
+      "zone": "Wing B",
+      "corridor": "Corridor 5",
+      "position": {
+        "x": 95.0,
+        "y": 50.0
+      },
+      "image": "assets/images/waypoint-065.jpg",
+      "neighbors": [
+        "wp-064",
+        "wp-066"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-066",
+      "name": "Waypoint 066",
+      "zone": "Wing B",
+      "corridor": "Corridor 6",
+      "position": {
+        "x": 95.0,
+        "y": 61.25
+      },
+      "image": "assets/images/waypoint-066.jpg",
+      "neighbors": [
+        "wp-065",
+        "wp-067"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-067",
+      "name": "Waypoint 067",
+      "zone": "Wing B",
+      "corridor": "Corridor 6",
+      "position": {
+        "x": 87.5,
+        "y": 61.25
+      },
+      "image": "assets/images/waypoint-067.jpg",
+      "neighbors": [
+        "wp-066",
+        "wp-068"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-068",
+      "name": "Waypoint 068",
+      "zone": "Wing B",
+      "corridor": "Corridor 6",
+      "position": {
+        "x": 80.0,
+        "y": 61.25
+      },
+      "image": "assets/images/waypoint-068.jpg",
+      "neighbors": [
+        "wp-067",
+        "wp-069"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-069",
+      "name": "Waypoint 069",
+      "zone": "Wing B",
+      "corridor": "Corridor 6",
+      "position": {
+        "x": 72.5,
+        "y": 61.25
+      },
+      "image": "assets/images/waypoint-069.jpg",
+      "neighbors": [
+        "wp-068",
+        "wp-070"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-070",
+      "name": "Waypoint 070",
+      "zone": "Wing B",
+      "corridor": "Corridor 6",
+      "position": {
+        "x": 65.0,
+        "y": 61.25
+      },
+      "image": "assets/images/waypoint-070.jpg",
+      "neighbors": [
+        "wp-069",
+        "wp-071"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-071",
+      "name": "Waypoint 071",
+      "zone": "Wing B",
+      "corridor": "Corridor 6",
+      "position": {
+        "x": 57.5,
+        "y": 61.25
+      },
+      "image": "assets/images/waypoint-071.jpg",
+      "neighbors": [
+        "wp-070",
+        "wp-072"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-072",
+      "name": "Waypoint 072",
+      "zone": "Wing B",
+      "corridor": "Corridor 6",
+      "position": {
+        "x": 50.0,
+        "y": 61.25
+      },
+      "image": "assets/images/waypoint-072.jpg",
+      "neighbors": [
+        "wp-071",
+        "wp-073"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-073",
+      "name": "Waypoint 073",
+      "zone": "Wing B",
+      "corridor": "Corridor 6",
+      "position": {
+        "x": 42.5,
+        "y": 61.25
+      },
+      "image": "assets/images/waypoint-073.jpg",
+      "neighbors": [
+        "wp-072",
+        "wp-074"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-074",
+      "name": "Waypoint 074",
+      "zone": "Wing B",
+      "corridor": "Corridor 6",
+      "position": {
+        "x": 35.0,
+        "y": 61.25
+      },
+      "image": "assets/images/waypoint-074.jpg",
+      "neighbors": [
+        "wp-073",
+        "wp-075"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-075",
+      "name": "Waypoint 075",
+      "zone": "Wing B",
+      "corridor": "Corridor 6",
+      "position": {
+        "x": 27.5,
+        "y": 61.25
+      },
+      "image": "assets/images/waypoint-075.jpg",
+      "neighbors": [
+        "wp-074",
+        "wp-076"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-076",
+      "name": "Waypoint 076",
+      "zone": "Wing B",
+      "corridor": "Corridor 6",
+      "position": {
+        "x": 20.0,
+        "y": 61.25
+      },
+      "image": "assets/images/waypoint-076.jpg",
+      "neighbors": [
+        "wp-075",
+        "wp-077"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-077",
+      "name": "Waypoint 077",
+      "zone": "Wing B",
+      "corridor": "Corridor 6",
+      "position": {
+        "x": 12.5,
+        "y": 61.25
+      },
+      "image": "assets/images/waypoint-077.jpg",
+      "neighbors": [
+        "wp-076",
+        "wp-078"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-078",
+      "name": "Waypoint 078",
+      "zone": "Wing B",
+      "corridor": "Corridor 6",
+      "position": {
+        "x": 5.0,
+        "y": 61.25
+      },
+      "image": "assets/images/waypoint-078.jpg",
+      "neighbors": [
+        "wp-077",
+        "wp-079"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-079",
+      "name": "Waypoint 079",
+      "zone": "Wing C",
+      "corridor": "Corridor 7",
+      "position": {
+        "x": 5.0,
+        "y": 72.5
+      },
+      "image": "assets/images/waypoint-079.jpg",
+      "neighbors": [
+        "wp-078",
+        "wp-080"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-080",
+      "name": "Waypoint 080",
+      "zone": "Wing C",
+      "corridor": "Corridor 7",
+      "position": {
+        "x": 12.5,
+        "y": 72.5
+      },
+      "image": "assets/images/waypoint-080.jpg",
+      "neighbors": [
+        "wp-079",
+        "wp-081"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-081",
+      "name": "Waypoint 081",
+      "zone": "Wing C",
+      "corridor": "Corridor 7",
+      "position": {
+        "x": 20.0,
+        "y": 72.5
+      },
+      "image": "assets/images/waypoint-081.jpg",
+      "neighbors": [
+        "wp-080",
+        "wp-082"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-082",
+      "name": "Waypoint 082",
+      "zone": "Wing C",
+      "corridor": "Corridor 7",
+      "position": {
+        "x": 27.5,
+        "y": 72.5
+      },
+      "image": "assets/images/waypoint-082.jpg",
+      "neighbors": [
+        "wp-081",
+        "wp-083"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-083",
+      "name": "Waypoint 083",
+      "zone": "Wing C",
+      "corridor": "Corridor 7",
+      "position": {
+        "x": 35.0,
+        "y": 72.5
+      },
+      "image": "assets/images/waypoint-083.jpg",
+      "neighbors": [
+        "wp-082",
+        "wp-084"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-084",
+      "name": "Waypoint 084",
+      "zone": "Wing C",
+      "corridor": "Corridor 7",
+      "position": {
+        "x": 42.5,
+        "y": 72.5
+      },
+      "image": "assets/images/waypoint-084.jpg",
+      "neighbors": [
+        "wp-083",
+        "wp-085"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-085",
+      "name": "Waypoint 085",
+      "zone": "Wing C",
+      "corridor": "Corridor 7",
+      "position": {
+        "x": 50.0,
+        "y": 72.5
+      },
+      "image": "assets/images/waypoint-085.jpg",
+      "neighbors": [
+        "wp-084",
+        "wp-086"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-086",
+      "name": "Waypoint 086",
+      "zone": "Wing C",
+      "corridor": "Corridor 7",
+      "position": {
+        "x": 57.5,
+        "y": 72.5
+      },
+      "image": "assets/images/waypoint-086.jpg",
+      "neighbors": [
+        "wp-085",
+        "wp-087"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-087",
+      "name": "Waypoint 087",
+      "zone": "Wing C",
+      "corridor": "Corridor 7",
+      "position": {
+        "x": 65.0,
+        "y": 72.5
+      },
+      "image": "assets/images/waypoint-087.jpg",
+      "neighbors": [
+        "wp-086",
+        "wp-088"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-088",
+      "name": "Waypoint 088",
+      "zone": "Wing C",
+      "corridor": "Corridor 7",
+      "position": {
+        "x": 72.5,
+        "y": 72.5
+      },
+      "image": "assets/images/waypoint-088.jpg",
+      "neighbors": [
+        "wp-087",
+        "wp-089"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-089",
+      "name": "Waypoint 089",
+      "zone": "Wing C",
+      "corridor": "Corridor 7",
+      "position": {
+        "x": 80.0,
+        "y": 72.5
+      },
+      "image": "assets/images/waypoint-089.jpg",
+      "neighbors": [
+        "wp-088",
+        "wp-090"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-090",
+      "name": "Waypoint 090",
+      "zone": "Wing C",
+      "corridor": "Corridor 7",
+      "position": {
+        "x": 87.5,
+        "y": 72.5
+      },
+      "image": "assets/images/waypoint-090.jpg",
+      "neighbors": [
+        "wp-089",
+        "wp-091"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-091",
+      "name": "Waypoint 091",
+      "zone": "Wing C",
+      "corridor": "Corridor 7",
+      "position": {
+        "x": 95.0,
+        "y": 72.5
+      },
+      "image": "assets/images/waypoint-091.jpg",
+      "neighbors": [
+        "wp-090",
+        "wp-092"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-092",
+      "name": "Waypoint 092",
+      "zone": "Wing C",
+      "corridor": "Corridor 8",
+      "position": {
+        "x": 95.0,
+        "y": 83.75
+      },
+      "image": "assets/images/waypoint-092.jpg",
+      "neighbors": [
+        "wp-091",
+        "wp-093"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-093",
+      "name": "Waypoint 093",
+      "zone": "Wing C",
+      "corridor": "Corridor 8",
+      "position": {
+        "x": 87.5,
+        "y": 83.75
+      },
+      "image": "assets/images/waypoint-093.jpg",
+      "neighbors": [
+        "wp-092",
+        "wp-094"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-094",
+      "name": "Waypoint 094",
+      "zone": "Wing C",
+      "corridor": "Corridor 8",
+      "position": {
+        "x": 80.0,
+        "y": 83.75
+      },
+      "image": "assets/images/waypoint-094.jpg",
+      "neighbors": [
+        "wp-093",
+        "wp-095"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-095",
+      "name": "Waypoint 095",
+      "zone": "Wing C",
+      "corridor": "Corridor 8",
+      "position": {
+        "x": 72.5,
+        "y": 83.75
+      },
+      "image": "assets/images/waypoint-095.jpg",
+      "neighbors": [
+        "wp-094",
+        "wp-096"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-096",
+      "name": "Waypoint 096",
+      "zone": "Wing C",
+      "corridor": "Corridor 8",
+      "position": {
+        "x": 65.0,
+        "y": 83.75
+      },
+      "image": "assets/images/waypoint-096.jpg",
+      "neighbors": [
+        "wp-095",
+        "wp-097"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-097",
+      "name": "Waypoint 097",
+      "zone": "Wing C",
+      "corridor": "Corridor 8",
+      "position": {
+        "x": 57.5,
+        "y": 83.75
+      },
+      "image": "assets/images/waypoint-097.jpg",
+      "neighbors": [
+        "wp-096",
+        "wp-098"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-098",
+      "name": "Waypoint 098",
+      "zone": "Wing C",
+      "corridor": "Corridor 8",
+      "position": {
+        "x": 50.0,
+        "y": 83.75
+      },
+      "image": "assets/images/waypoint-098.jpg",
+      "neighbors": [
+        "wp-097",
+        "wp-099"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-099",
+      "name": "Waypoint 099",
+      "zone": "Wing C",
+      "corridor": "Corridor 8",
+      "position": {
+        "x": 42.5,
+        "y": 83.75
+      },
+      "image": "assets/images/waypoint-099.jpg",
+      "neighbors": [
+        "wp-098",
+        "wp-100"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-100",
+      "name": "Waypoint 100",
+      "zone": "Wing C",
+      "corridor": "Corridor 8",
+      "position": {
+        "x": 35.0,
+        "y": 83.75
+      },
+      "image": "assets/images/waypoint-100.jpg",
+      "neighbors": [
+        "wp-099",
+        "wp-101"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-101",
+      "name": "Waypoint 101",
+      "zone": "Wing C",
+      "corridor": "Corridor 8",
+      "position": {
+        "x": 27.5,
+        "y": 83.75
+      },
+      "image": "assets/images/waypoint-101.jpg",
+      "neighbors": [
+        "wp-100",
+        "wp-102"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-102",
+      "name": "Waypoint 102",
+      "zone": "Wing C",
+      "corridor": "Corridor 8",
+      "position": {
+        "x": 20.0,
+        "y": 83.75
+      },
+      "image": "assets/images/waypoint-102.jpg",
+      "neighbors": [
+        "wp-101",
+        "wp-103"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-103",
+      "name": "Waypoint 103",
+      "zone": "Wing C",
+      "corridor": "Corridor 8",
+      "position": {
+        "x": 12.5,
+        "y": 83.75
+      },
+      "image": "assets/images/waypoint-103.jpg",
+      "neighbors": [
+        "wp-102",
+        "wp-104"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-104",
+      "name": "Waypoint 104",
+      "zone": "Wing C",
+      "corridor": "Corridor 8",
+      "position": {
+        "x": 5.0,
+        "y": 83.75
+      },
+      "image": "assets/images/waypoint-104.jpg",
+      "neighbors": [
+        "wp-103",
+        "wp-105"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-105",
+      "name": "Waypoint 105",
+      "zone": "Wing C",
+      "corridor": "Corridor 9",
+      "position": {
+        "x": 5.0,
+        "y": 95.0
+      },
+      "image": "assets/images/waypoint-105.jpg",
+      "neighbors": [
+        "wp-104",
+        "wp-106"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-106",
+      "name": "Waypoint 106",
+      "zone": "Wing C",
+      "corridor": "Corridor 9",
+      "position": {
+        "x": 12.5,
+        "y": 95.0
+      },
+      "image": "assets/images/waypoint-106.jpg",
+      "neighbors": [
+        "wp-105",
+        "wp-107"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-107",
+      "name": "Waypoint 107",
+      "zone": "Wing C",
+      "corridor": "Corridor 9",
+      "position": {
+        "x": 20.0,
+        "y": 95.0
+      },
+      "image": "assets/images/waypoint-107.jpg",
+      "neighbors": [
+        "wp-106",
+        "wp-108"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-108",
+      "name": "Waypoint 108",
+      "zone": "Wing C",
+      "corridor": "Corridor 9",
+      "position": {
+        "x": 27.5,
+        "y": 95.0
+      },
+      "image": "assets/images/waypoint-108.jpg",
+      "neighbors": [
+        "wp-107",
+        "wp-109"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-109",
+      "name": "Waypoint 109",
+      "zone": "Wing C",
+      "corridor": "Corridor 9",
+      "position": {
+        "x": 35.0,
+        "y": 95.0
+      },
+      "image": "assets/images/waypoint-109.jpg",
+      "neighbors": [
+        "wp-108",
+        "wp-110"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-110",
+      "name": "Waypoint 110",
+      "zone": "Wing C",
+      "corridor": "Corridor 9",
+      "position": {
+        "x": 42.5,
+        "y": 95.0
+      },
+      "image": "assets/images/waypoint-110.jpg",
+      "neighbors": [
+        "wp-109",
+        "wp-111"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-111",
+      "name": "Waypoint 111",
+      "zone": "Wing C",
+      "corridor": "Corridor 9",
+      "position": {
+        "x": 50.0,
+        "y": 95.0
+      },
+      "image": "assets/images/waypoint-111.jpg",
+      "neighbors": [
+        "wp-110",
+        "wp-112"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-112",
+      "name": "Waypoint 112",
+      "zone": "Wing C",
+      "corridor": "Corridor 9",
+      "position": {
+        "x": 57.5,
+        "y": 95.0
+      },
+      "image": "assets/images/waypoint-112.jpg",
+      "neighbors": [
+        "wp-111",
+        "wp-113"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-113",
+      "name": "Waypoint 113",
+      "zone": "Wing C",
+      "corridor": "Corridor 9",
+      "position": {
+        "x": 65.0,
+        "y": 95.0
+      },
+      "image": "assets/images/waypoint-113.jpg",
+      "neighbors": [
+        "wp-112",
+        "wp-114"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-114",
+      "name": "Waypoint 114",
+      "zone": "Wing C",
+      "corridor": "Corridor 9",
+      "position": {
+        "x": 72.5,
+        "y": 95.0
+      },
+      "image": "assets/images/waypoint-114.jpg",
+      "neighbors": [
+        "wp-113",
+        "wp-115"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-115",
+      "name": "Waypoint 115",
+      "zone": "Wing C",
+      "corridor": "Corridor 9",
+      "position": {
+        "x": 80.0,
+        "y": 95.0
+      },
+      "image": "assets/images/waypoint-115.jpg",
+      "neighbors": [
+        "wp-114",
+        "wp-116"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-116",
+      "name": "Waypoint 116",
+      "zone": "Wing C",
+      "corridor": "Corridor 9",
+      "position": {
+        "x": 87.5,
+        "y": 95.0
+      },
+      "image": "assets/images/waypoint-116.jpg",
+      "neighbors": [
+        "wp-115",
+        "wp-117"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    },
+    {
+      "id": "wp-117",
+      "name": "Waypoint 117",
+      "zone": "Wing C",
+      "corridor": "Corridor 9",
+      "position": {
+        "x": 95.0,
+        "y": 95.0
+      },
+      "image": "assets/images/waypoint-117.jpg",
+      "neighbors": [
+        "wp-116"
+      ],
+      "notes": "Auto-generated placeholder description. Update after site survey."
+    }
+  ]
+}

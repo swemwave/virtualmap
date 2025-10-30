@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StanGrad Virtual Map</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -19,25 +13,17 @@
         <h1>StanGrad Virtual Map</h1>
         <p class="subtitle">Explore the 2nd Floor near MB Wing at SAIT</p>
       </div>
-      <nav class="toolbar" aria-label="Viewer controls">
-        <div class="toolbar__group">
-          <label for="nodeSelect" class="toolbar__label">Location</label>
-          <select
-            id="nodeSelect"
-            class="toolbar__select"
-            aria-label="Panorama location selector"
-          ></select>
-        </div>
-        <div class="toolbar__group">
-          <label for="filterSelect" class="toolbar__label">Filter</label>
-          <select id="filterSelect" class="toolbar__select" aria-label="Location type filter">
-            <option value="all">All</option>
-            <option value="hallway">Hallways</option>
-            <option value="classroom">Classrooms</option>
-            <option value="intersection">Intersections</option>
-            <option value="lounge">Lounges</option>
-          </select>
-        </div>
+      <nav class="toolbar">
+        <label for="nodeSelect" class="toolbar__label">Location</label>
+        <select id="nodeSelect" class="toolbar__select" aria-label="Panorama location selector"></select>
+        <label for="filterSelect" class="toolbar__label">Filter</label>
+        <select id="filterSelect" class="toolbar__select" aria-label="Location type filter">
+          <option value="all">All</option>
+          <option value="hallway">Hallways</option>
+          <option value="classroom">Classrooms</option>
+          <option value="intersection">Intersections</option>
+          <option value="lounge">Lounges</option>
+        </select>
         <button id="fullscreenButton" class="toolbar__button" type="button">Fullscreen</button>
       </nav>
     </header>

@@ -126,14 +126,12 @@ function updateMetadata() {
   }
 
   const features = Array.isArray(node.features) && node.features.length
-    ? `<ul class="meta__features" aria-label="Location tags">${node.features
-        .map((feature) => `<li class="meta__tag">${feature}</li>`)
-        .join('')}</ul>`
+    ? `<p class="meta__features"><strong>Tags:</strong> ${node.features.join(', ')}</p>`
     : '';
 
   metadataPanel.innerHTML = `
-    <p class="meta__eyebrow">${formatType(node.type)}</p>
     <h2 class="meta__title">${node.title ?? node.id}</h2>
+    <p class="meta__type">${formatType(node.type)}</p>
     <p class="meta__description">${node.description ?? 'No description provided yet.'}</p>
     ${features}
   `;
