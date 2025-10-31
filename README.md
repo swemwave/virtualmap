@@ -15,6 +15,14 @@ scripts/
   update_waypoints.py (placeholder for future automation)
 ```
 
+An enhanced panorama explorer lives at the repository root:
+
+```
+index.html            # Panorama viewer with floor plan overlay
+assets/               # Shared CSS, JS, and imagery for the root viewer
+data/panorama-map.json# Graph definition for the stitched 360° scenes
+```
+
 ## Viewing the map
 
 From the repository root, serve the `public` directory with any static file server. For example using Python:
@@ -24,6 +32,14 @@ python -m http.server --directory public 5173
 ```
 
 Then open <http://localhost:5173> in a desktop or mobile browser. Tap waypoints on the map to open their first-person photographs and use the route planner to highlight the fastest path between two points.
+
+For the stitched 360° walkthrough, serve the root directory instead:
+
+```bash
+python -m http.server 4173
+```
+
+Navigate to <http://localhost:4173> and load `index.html`. The viewer uses [Pannellum](https://pannellum.org/) to render the equirectangular captures, provides per-node metadata, and renders a layered floor plan with live markers so you can follow the capture path from above.
 
 ## Updating the dataset
 
