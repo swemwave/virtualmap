@@ -24,6 +24,8 @@
           <option value="intersection">Intersections</option>
           <option value="lounge">Lounges</option>
         </select>
+        <button id="prevStep" class="toolbar__button" type="button" title="Go to previous in sequence">Prev</button>
+        <button id="nextStep" class="toolbar__button" type="button" title="Go to next in sequence">Next</button>
         <button id="fullscreenButton" class="toolbar__button" type="button">Fullscreen</button>
       </nav>
     </header>
@@ -32,6 +34,18 @@
       <section class="viewer" aria-label="Panorama viewer">
         <div id="panorama" class="viewer__canvas"></div>
         <div class="viewer__meta" id="metadataPanel" aria-live="polite"></div>
+        <div class="viewer__controller" id="directionController" aria-label="Direction controls">
+          <div class="controller__row controller__row--forward">
+            <button id="dirForward" class="controller__btn" type="button" aria-label="Go forward" disabled>▲</button>
+          </div>
+          <div class="controller__row controller__row--middle">
+            <button id="dirLeft" class="controller__btn" type="button" aria-label="Go left" disabled>◄</button>
+            <button id="dirRight" class="controller__btn" type="button" aria-label="Go right" disabled>►</button>
+          </div>
+          <div class="controller__row controller__row--back">
+            <button id="dirBack" class="controller__btn" type="button" aria-label="Go back" disabled>▼</button>
+          </div>
+        </div>
       </section>
       <aside class="sidebar" aria-label="Navigation and floor plan">
         <section class="panel">
