@@ -40,8 +40,18 @@
         </section>
         <section class="panel">
           <h2>Floor Plan</h2>
+          <p id="floorplanSummary" class="floorplan__summary">
+            Loading floorplan metadata…
+          </p>
           <div id="floorplan" class="floorplan" role="img" aria-label="Top-down map of the current floor">
             <img id="floorplanImage" src="" alt="Floor plan" class="floorplan__image" />
+            <svg
+              id="floorplanGraph"
+              class="floorplan__graph"
+              viewBox="0 0 1 1"
+              preserveAspectRatio="xMidYMid meet"
+              aria-hidden="true"
+            ></svg>
             <div id="floorplanMarkers" class="floorplan__markers" aria-hidden="true"></div>
           </div>
         </section>

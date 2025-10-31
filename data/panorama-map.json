@@ -3,9 +3,17 @@
     "title": "StanGrad 2nd Floor",
     "description": "Automatically generated map data. Review and edit as needed.",
     "floorplan": {
-      "image": "assets/images/floorplan-placeholder.svg",
-      "width": 1200,
-      "height": 800
+      "image": "assets/images/stangrad-level2-floorplan.svg",
+      "alt": "Second floor schematic with corridor path",
+      "width": 100,
+      "height": 100,
+      "levels": [
+        {
+          "id": "level-2",
+          "label": "Level 2",
+          "floor": 2
+        }
+      ]
     }
   },
   "nodes": [
@@ -21,7 +29,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.19984,
+        "y": 0.19977
+      },
+      "level": 2,
+      "sequence": 1
     },
     {
       "id": "002_intersection_waypoint-002",
@@ -36,7 +50,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.20023,
+        "y": 0.19985
+      },
+      "level": 2,
+      "sequence": 2
     },
     {
       "id": "003_intersection_waypoint-003",
@@ -51,7 +71,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.20006,
+        "y": 0.20007
+      },
+      "level": 2,
+      "sequence": 3
     },
     {
       "id": "004_intersection_waypoint-004",
@@ -66,7 +92,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.23274,
+        "y": 0.20005
+      },
+      "level": 2,
+      "sequence": 4
     },
     {
       "id": "005_intersection_waypoint-005",
@@ -81,7 +113,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.3323,
+        "y": 0.20026
+      },
+      "level": 2,
+      "sequence": 5
     },
     {
       "id": "006_intersection_waypoint-006",
@@ -96,7 +134,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.39371,
+        "y": 0.20013
+      },
+      "level": 2,
+      "sequence": 6
     },
     {
       "id": "007_intersection_waypoint-007",
@@ -111,7 +155,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.46691,
+        "y": 0.19994
+      },
+      "level": 2,
+      "sequence": 7
     },
     {
       "id": "008_intersection_waypoint-008",
@@ -126,7 +176,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.59986,
+        "y": 0.19988
+      },
+      "level": 2,
+      "sequence": 8
     },
     {
       "id": "009_intersection_waypoint-009",
@@ -141,7 +197,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.69677,
+        "y": 0.20015
+      },
+      "level": 2,
+      "sequence": 9
     },
     {
       "id": "010_intersection_waypoint-010",
@@ -156,7 +218,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.74585,
+        "y": 0.19997
+      },
+      "level": 2,
+      "sequence": 10
     },
     {
       "id": "011_intersection_waypoint-011",
@@ -171,7 +239,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.8003,
+        "y": 0.2003
+      },
+      "level": 2,
+      "sequence": 11
     },
     {
       "id": "012_intersection_waypoint-012",
@@ -186,7 +260,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.79974,
+        "y": 0.19983
+      },
+      "level": 2,
+      "sequence": 12
     },
     {
       "id": "013_intersection_waypoint-013",
@@ -201,7 +281,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.79986,
+        "y": 0.20026
+      },
+      "level": 2,
+      "sequence": 13
     },
     {
       "id": "014_intersection_waypoint-014",
@@ -216,7 +302,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.80023,
+        "y": 0.20023
+      },
+      "level": 2,
+      "sequence": 14
     },
     {
       "id": "015_intersection_waypoint-015",
@@ -231,7 +323,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.79992,
+        "y": 0.19979
+      },
+      "level": 2,
+      "sequence": 15
     },
     {
       "id": "016_intersection_waypoint-016",
@@ -246,7 +344,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.77913,
+        "y": 0.20012
+      },
+      "level": 2,
+      "sequence": 16
     },
     {
       "id": "017_intersection_waypoint-017",
@@ -261,7 +365,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.76121,
+        "y": 0.20029
+      },
+      "level": 2,
+      "sequence": 17
     },
     {
       "id": "018_intersection_waypoint-018",
@@ -276,7 +386,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.67673,
+        "y": 0.1997
+      },
+      "level": 2,
+      "sequence": 18
     },
     {
       "id": "019_intersection_waypoint-019",
@@ -291,7 +407,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.58264,
+        "y": 0.19988
+      },
+      "level": 2,
+      "sequence": 19
     },
     {
       "id": "020_hallway_waypoint-020",
@@ -306,7 +428,13 @@
       "features": [
         "hallway",
         "wayfinding"
-      ]
+      ],
+      "position": {
+        "x": 0.49896,
+        "y": 0.20026
+      },
+      "level": 2,
+      "sequence": 20
     },
     {
       "id": "021_hallway_waypoint-021",
@@ -321,7 +449,13 @@
       "features": [
         "hallway",
         "wayfinding"
-      ]
+      ],
+      "position": {
+        "x": 0.37281,
+        "y": 0.19977
+      },
+      "level": 2,
+      "sequence": 21
     },
     {
       "id": "022_intersection_waypoint-022",
@@ -336,7 +470,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.29243,
+        "y": 0.20003
+      },
+      "level": 2,
+      "sequence": 22
     },
     {
       "id": "023_intersection_waypoint-023",
@@ -351,7 +491,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.26405,
+        "y": 0.20006
+      },
+      "level": 2,
+      "sequence": 23
     },
     {
       "id": "024_intersection_waypoint-024",
@@ -366,7 +512,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.20013,
+        "y": 0.19982
+      },
+      "level": 2,
+      "sequence": 24
     },
     {
       "id": "025_intersection_waypoint-025",
@@ -381,7 +533,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.20008,
+        "y": 0.19986
+      },
+      "level": 2,
+      "sequence": 25
     },
     {
       "id": "026_intersection_waypoint-026",
@@ -396,7 +554,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.19999,
+        "y": 0.23491
+      },
+      "level": 2,
+      "sequence": 26
     },
     {
       "id": "027_intersection_waypoint-027",
@@ -411,7 +575,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.20021,
+        "y": 0.2747
+      },
+      "level": 2,
+      "sequence": 27
     },
     {
       "id": "028_hallway_waypoint-028",
@@ -426,7 +596,13 @@
       "features": [
         "hallway",
         "wayfinding"
-      ]
+      ],
+      "position": {
+        "x": 0.19995,
+        "y": 0.19987
+      },
+      "level": 2,
+      "sequence": 28
     },
     {
       "id": "029_intersection_waypoint-029",
@@ -441,7 +617,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.1997,
+        "y": 0.25202
+      },
+      "level": 2,
+      "sequence": 29
     },
     {
       "id": "030_intersection_waypoint-030",
@@ -456,7 +638,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.2475,
+        "y": 0.19986
+      },
+      "level": 2,
+      "sequence": 30
     },
     {
       "id": "031_intersection_waypoint-031",
@@ -471,7 +659,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.31584,
+        "y": 0.20003
+      },
+      "level": 2,
+      "sequence": 31
     },
     {
       "id": "032_intersection_waypoint-032",
@@ -486,7 +680,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.41783,
+        "y": 0.19971
+      },
+      "level": 2,
+      "sequence": 32
     },
     {
       "id": "033_intersection_waypoint-033",
@@ -501,7 +701,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.48284,
+        "y": 0.20023
+      },
+      "level": 2,
+      "sequence": 33
     },
     {
       "id": "034_intersection_waypoint-034",
@@ -516,7 +722,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.55955,
+        "y": 0.20003
+      },
+      "level": 2,
+      "sequence": 34
     },
     {
       "id": "035_intersection_waypoint-035",
@@ -531,7 +743,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.65257,
+        "y": 0.20005
+      },
+      "level": 2,
+      "sequence": 35
     },
     {
       "id": "036_intersection_waypoint-036",
@@ -546,7 +764,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.72612,
+        "y": 0.19978
+      },
+      "level": 2,
+      "sequence": 36
     },
     {
       "id": "037_intersection_waypoint-037",
@@ -561,7 +785,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.79988,
+        "y": 0.25357
+      },
+      "level": 2,
+      "sequence": 37
     },
     {
       "id": "038_intersection_waypoint-038",
@@ -576,7 +806,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.80018,
+        "y": 0.23671
+      },
+      "level": 2,
+      "sequence": 38
     },
     {
       "id": "039_intersection_waypoint-039",
@@ -591,7 +827,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.80024,
+        "y": 0.30327
+      },
+      "level": 2,
+      "sequence": 39
     },
     {
       "id": "040_intersection_waypoint-040",
@@ -606,7 +848,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.79985,
+        "y": 0.28526
+      },
+      "level": 2,
+      "sequence": 40
     },
     {
       "id": "041_intersection_waypoint-041",
@@ -621,7 +869,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.80017,
+        "y": 0.359
+      },
+      "level": 2,
+      "sequence": 41
     },
     {
       "id": "042_intersection_waypoint-042",
@@ -636,7 +890,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.79994,
+        "y": 0.39211
+      },
+      "level": 2,
+      "sequence": 42
     },
     {
       "id": "043_intersection_waypoint-043",
@@ -651,7 +911,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.79979,
+        "y": 0.33102
+      },
+      "level": 2,
+      "sequence": 43
     },
     {
       "id": "044_intersection_waypoint-044",
@@ -666,7 +932,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.7281,
+        "y": 0.2635
+      },
+      "level": 2,
+      "sequence": 44
     },
     {
       "id": "045_intersection_waypoint-045",
@@ -681,7 +953,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.63077,
+        "y": 0.20023
+      },
+      "level": 2,
+      "sequence": 45
     },
     {
       "id": "046_intersection_waypoint-046",
@@ -696,7 +974,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.52641,
+        "y": 0.20014
+      },
+      "level": 2,
+      "sequence": 46
     },
     {
       "id": "047_intersection_waypoint-047",
@@ -711,7 +995,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.40956,
+        "y": 0.22792
+      },
+      "level": 2,
+      "sequence": 47
     },
     {
       "id": "048_intersection_waypoint-048",
@@ -726,7 +1016,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.29419,
+        "y": 0.27053
+      },
+      "level": 2,
+      "sequence": 48
     },
     {
       "id": "049_intersection_waypoint-049",
@@ -741,7 +1037,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.20019,
+        "y": 0.31751
+      },
+      "level": 2,
+      "sequence": 49
     },
     {
       "id": "050_intersection_waypoint-050",
@@ -756,7 +1058,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.20017,
+        "y": 0.39944
+      },
+      "level": 2,
+      "sequence": 50
     },
     {
       "id": "051_intersection_waypoint-051",
@@ -771,7 +1079,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.20022,
+        "y": 0.35231
+      },
+      "level": 2,
+      "sequence": 51
     },
     {
       "id": "052_intersection_waypoint-052",
@@ -786,7 +1100,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.19983,
+        "y": 0.38374
+      },
+      "level": 2,
+      "sequence": 52
     },
     {
       "id": "053_intersection_waypoint-053",
@@ -801,7 +1121,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.19998,
+        "y": 0.4722
+      },
+      "level": 2,
+      "sequence": 53
     },
     {
       "id": "054_intersection_waypoint-054",
@@ -816,7 +1142,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.20018,
+        "y": 0.53759
+      },
+      "level": 2,
+      "sequence": 54
     },
     {
       "id": "055_intersection_waypoint-055",
@@ -831,7 +1163,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.19971,
+        "y": 0.50626
+      },
+      "level": 2,
+      "sequence": 55
     },
     {
       "id": "056_intersection_waypoint-056",
@@ -846,7 +1184,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.1999,
+        "y": 0.44978
+      },
+      "level": 2,
+      "sequence": 56
     },
     {
       "id": "057_intersection_waypoint-057",
@@ -861,7 +1205,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.28092,
+        "y": 0.47371
+      },
+      "level": 2,
+      "sequence": 57
     },
     {
       "id": "058_intersection_waypoint-058",
@@ -876,7 +1226,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.39294,
+        "y": 0.48442
+      },
+      "level": 2,
+      "sequence": 58
     },
     {
       "id": "059_intersection_waypoint-059",
@@ -891,7 +1247,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.51539,
+        "y": 0.48794
+      },
+      "level": 2,
+      "sequence": 59
     },
     {
       "id": "060_intersection_waypoint-060",
@@ -906,7 +1268,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.63539,
+        "y": 0.48642
+      },
+      "level": 2,
+      "sequence": 60
     },
     {
       "id": "061_hallway_waypoint-061",
@@ -921,7 +1289,13 @@
       "features": [
         "hallway",
         "wayfinding"
-      ]
+      ],
+      "position": {
+        "x": 0.74061,
+        "y": 0.48202
+      },
+      "level": 2,
+      "sequence": 61
     },
     {
       "id": "062_intersection_waypoint-062",
@@ -936,7 +1310,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.80028,
+        "y": 0.48878
+      },
+      "level": 2,
+      "sequence": 62
     },
     {
       "id": "063_intersection_waypoint-063",
@@ -951,7 +1331,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.79977,
+        "y": 0.46339
+      },
+      "level": 2,
+      "sequence": 63
     },
     {
       "id": "064_intersection_waypoint-064",
@@ -966,7 +1352,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.80014,
+        "y": 0.54912
+      },
+      "level": 2,
+      "sequence": 64
     },
     {
       "id": "065_hallway_waypoint-065",
@@ -981,7 +1373,13 @@
       "features": [
         "hallway",
         "wayfinding"
-      ]
+      ],
+      "position": {
+        "x": 0.80006,
+        "y": 0.52965
+      },
+      "level": 2,
+      "sequence": 65
     },
     {
       "id": "066_intersection_waypoint-066",
@@ -996,7 +1394,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.79993,
+        "y": 0.59303
+      },
+      "level": 2,
+      "sequence": 66
     },
     {
       "id": "067_intersection_waypoint-067",
@@ -1011,7 +1415,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.79985,
+        "y": 0.65401
+      },
+      "level": 2,
+      "sequence": 67
     },
     {
       "id": "068_intersection_waypoint-068",
@@ -1026,7 +1436,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.7997,
+        "y": 0.63202
+      },
+      "level": 2,
+      "sequence": 68
     },
     {
       "id": "069_intersection_waypoint-069",
@@ -1041,7 +1457,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.80002,
+        "y": 0.69277
+      },
+      "level": 2,
+      "sequence": 69
     },
     {
       "id": "070_intersection_waypoint-070",
@@ -1056,7 +1478,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.70322,
+        "y": 0.75277
+      },
+      "level": 2,
+      "sequence": 70
     },
     {
       "id": "071_intersection_waypoint-071",
@@ -1071,7 +1499,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.59061,
+        "y": 0.79974
+      },
+      "level": 2,
+      "sequence": 71
     },
     {
       "id": "072_intersection_waypoint-072",
@@ -1086,7 +1520,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.48434,
+        "y": 0.7999
+      },
+      "level": 2,
+      "sequence": 72
     },
     {
       "id": "073_intersection_waypoint-073",
@@ -1101,7 +1541,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.36502,
+        "y": 0.80021
+      },
+      "level": 2,
+      "sequence": 73
     },
     {
       "id": "074_intersection_waypoint-074",
@@ -1116,7 +1562,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.26014,
+        "y": 0.79988
+      },
+      "level": 2,
+      "sequence": 74
     },
     {
       "id": "075_intersection_waypoint-075",
@@ -1131,7 +1583,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.19989,
+        "y": 0.72846
+      },
+      "level": 2,
+      "sequence": 75
     },
     {
       "id": "076_intersection_waypoint-076",
@@ -1146,7 +1604,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.19994,
+        "y": 0.65125
+      },
+      "level": 2,
+      "sequence": 76
     },
     {
       "id": "077_intersection_waypoint-077",
@@ -1161,7 +1625,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.19978,
+        "y": 0.59258
+      },
+      "level": 2,
+      "sequence": 77
     },
     {
       "id": "078_intersection_waypoint-078",
@@ -1176,7 +1646,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.20026,
+        "y": 0.62224
+      },
+      "level": 2,
+      "sequence": 78
     },
     {
       "id": "079_intersection_waypoint-079",
@@ -1191,7 +1667,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.20024,
+        "y": 0.67506
+      },
+      "level": 2,
+      "sequence": 79
     },
     {
       "id": "080_intersection_waypoint-080",
@@ -1206,7 +1688,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.19988,
+        "y": 0.70569
+      },
+      "level": 2,
+      "sequence": 80
     },
     {
       "id": "081_intersection_waypoint-081",
@@ -1221,7 +1709,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.1997,
+        "y": 0.76835
+      },
+      "level": 2,
+      "sequence": 81
     },
     {
       "id": "082_intersection_waypoint-082",
@@ -1236,7 +1730,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.19996,
+        "y": 0.80005
+      },
+      "level": 2,
+      "sequence": 82
     },
     {
       "id": "083_intersection_waypoint-083",
@@ -1251,7 +1751,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.29509,
+        "y": 0.79998
+      },
+      "level": 2,
+      "sequence": 83
     },
     {
       "id": "084_intersection_waypoint-084",
@@ -1266,7 +1772,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.38803,
+        "y": 0.79983
+      },
+      "level": 2,
+      "sequence": 84
     },
     {
       "id": "085_intersection_waypoint-085",
@@ -1281,7 +1793,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.51427,
+        "y": 0.80024
+      },
+      "level": 2,
+      "sequence": 85
     },
     {
       "id": "086_intersection_waypoint-086",
@@ -1296,7 +1814,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.65503,
+        "y": 0.7998
+      },
+      "level": 2,
+      "sequence": 86
     },
     {
       "id": "087_intersection_waypoint-087",
@@ -1311,7 +1835,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.75642,
+        "y": 0.80001
+      },
+      "level": 2,
+      "sequence": 87
     },
     {
       "id": "088_intersection_waypoint-088",
@@ -1326,7 +1856,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.80008,
+        "y": 0.7999
+      },
+      "level": 2,
+      "sequence": 88
     },
     {
       "id": "089_intersection_waypoint-089",
@@ -1341,7 +1877,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.80019,
+        "y": 0.72329
+      },
+      "level": 2,
+      "sequence": 89
     },
     {
       "id": "090_intersection_waypoint-090",
@@ -1356,7 +1898,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.8001,
+        "y": 0.76043
+      },
+      "level": 2,
+      "sequence": 90
     },
     {
       "id": "091_intersection_waypoint-091",
@@ -1371,7 +1919,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.79982,
+        "y": 0.74267
+      },
+      "level": 2,
+      "sequence": 91
     },
     {
       "id": "092_intersection_waypoint-092",
@@ -1386,7 +1940,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.79985,
+        "y": 0.79999
+      },
+      "level": 2,
+      "sequence": 92
     },
     {
       "id": "093_intersection_waypoint-093",
@@ -1401,7 +1961,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.80021,
+        "y": 0.79974
+      },
+      "level": 2,
+      "sequence": 93
     },
     {
       "id": "094_intersection_waypoint-094",
@@ -1416,7 +1982,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.79995,
+        "y": 0.80008
+      },
+      "level": 2,
+      "sequence": 94
     },
     {
       "id": "095_intersection_waypoint-095",
@@ -1431,7 +2003,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.71759,
+        "y": 0.80012
+      },
+      "level": 2,
+      "sequence": 95
     },
     {
       "id": "096_intersection_waypoint-096",
@@ -1446,7 +2024,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.63721,
+        "y": 0.79985
+      },
+      "level": 2,
+      "sequence": 96
     },
     {
       "id": "097_intersection_waypoint-097",
@@ -1461,7 +2045,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.55964,
+        "y": 0.7997
+      },
+      "level": 2,
+      "sequence": 97
     },
     {
       "id": "098_intersection_waypoint-098",
@@ -1476,7 +2066,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.46471,
+        "y": 0.80016
+      },
+      "level": 2,
+      "sequence": 98
     },
     {
       "id": "099_intersection_waypoint-099",
@@ -1491,7 +2087,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.40103,
+        "y": 0.79996
+      },
+      "level": 2,
+      "sequence": 99
     },
     {
       "id": "100_intersection_waypoint-100",
@@ -1506,7 +2108,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.27967,
+        "y": 0.80027
+      },
+      "level": 2,
+      "sequence": 100
     },
     {
       "id": "101_intersection_waypoint-101",
@@ -1521,7 +2129,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.20001,
+        "y": 0.79973
+      },
+      "level": 2,
+      "sequence": 101
     },
     {
       "id": "102_intersection_waypoint-102",
@@ -1536,7 +2150,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.19985,
+        "y": 0.80021
+      },
+      "level": 2,
+      "sequence": 102
     },
     {
       "id": "103_intersection_waypoint-103",
@@ -1551,7 +2171,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.19997,
+        "y": 0.80018
+      },
+      "level": 2,
+      "sequence": 103
     },
     {
       "id": "104_intersection_waypoint-104",
@@ -1566,7 +2192,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.2001,
+        "y": 0.75251
+      },
+      "level": 2,
+      "sequence": 104
     },
     {
       "id": "105_intersection_waypoint-105",
@@ -1581,7 +2213,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.20006,
+        "y": 0.80027
+      },
+      "level": 2,
+      "sequence": 105
     },
     {
       "id": "106_intersection_waypoint-106",
@@ -1596,7 +2234,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.22295,
+        "y": 0.80007
+      },
+      "level": 2,
+      "sequence": 106
     },
     {
       "id": "107_intersection_waypoint-107",
@@ -1611,7 +2255,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.24133,
+        "y": 0.8
+      },
+      "level": 2,
+      "sequence": 107
     },
     {
       "id": "108_intersection_waypoint-108",
@@ -1626,7 +2276,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.31331,
+        "y": 0.80003
+      },
+      "level": 2,
+      "sequence": 108
     },
     {
       "id": "109_intersection_waypoint-109",
@@ -1641,7 +2297,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.3448,
+        "y": 0.80015
+      },
+      "level": 2,
+      "sequence": 109
     },
     {
       "id": "110_intersection_waypoint-110",
@@ -1656,7 +2318,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.43529,
+        "y": 0.79986
+      },
+      "level": 2,
+      "sequence": 110
     },
     {
       "id": "111_intersection_waypoint-111",
@@ -1671,7 +2339,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.53382,
+        "y": 0.80008
+      },
+      "level": 2,
+      "sequence": 111
     },
     {
       "id": "112_intersection_waypoint-112",
@@ -1686,7 +2360,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.61346,
+        "y": 0.80001
+      },
+      "level": 2,
+      "sequence": 112
     },
     {
       "id": "113_intersection_waypoint-113",
@@ -1701,7 +2381,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.68732,
+        "y": 0.79986
+      },
+      "level": 2,
+      "sequence": 113
     },
     {
       "id": "114_intersection_waypoint-114",
@@ -1716,7 +2402,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.74026,
+        "y": 0.79987
+      },
+      "level": 2,
+      "sequence": 114
     },
     {
       "id": "115_intersection_waypoint-115",
@@ -1731,7 +2423,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.79986,
+        "y": 0.79989
+      },
+      "level": 2,
+      "sequence": 115
     },
     {
       "id": "116_intersection_waypoint-116",
@@ -1746,7 +2444,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.80002,
+        "y": 0.79978
+      },
+      "level": 2,
+      "sequence": 116
     },
     {
       "id": "117_intersection_waypoint-117",
@@ -1760,7 +2464,13 @@
       "features": [
         "intersection",
         "branching"
-      ]
+      ],
+      "position": {
+        "x": 0.79984,
+        "y": 0.80012
+      },
+      "level": 2,
+      "sequence": 117
     }
   ]
 }

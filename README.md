@@ -13,6 +13,15 @@ public/
   assets/images/     # Renamed photo set organised as waypoint-XYZ.jpg
 scripts/
   update_waypoints.py (placeholder for future automation)
+  relax_floorplan.py  (spreads panorama markers across the floor plan)
+```
+
+An enhanced panorama explorer lives at the repository root:
+
+```
+index.html            # Panorama viewer with floor plan overlay
+assets/               # Shared CSS, JS, and imagery for the root viewer
+data/panorama-map.json# Graph definition for the stitched 360° scenes
 ```
 
 ## Viewing the map
@@ -25,11 +34,20 @@ python -m http.server --directory public 5173
 
 Then open <http://localhost:5173> in a desktop or mobile browser. Tap waypoints on the map to open their first-person photographs and use the route planner to highlight the fastest path between two points.
 
+For the stitched 360° walkthrough, serve the root directory instead:
+
+```bash
+python -m http.server 4173
+```
+
+Navigate to <http://localhost:4173> and load `index.html`. The viewer uses [Pannellum](https://pannellum.org/) to render the equirectangular captures, provides per-node metadata, and renders a layered floor plan with live markers so you can follow the capture path from above.
+
 ## Updating the dataset
 
 1. Drop new photos into `public/assets/images` and follow the existing `waypoint-###.jpg` naming convention.
 2. Update `public/data/waypoints.json` with the new positions, adjacency, and metadata. The current file was generated as a serpentine placeholder—replace the coordinates with accurate survey data as you refine the map.
-3. Reload the web app to see the expanded coverage. The UI automatically ingests the new waypoints without additional code changes.
+3. Run `python scripts/relax_floorplan.py` to fan out the `data/panorama-map.json` markers so the floor plan retains clear gaps between capture points. Pass `--dry-run` to preview the adjustment or tweak `--margin` to reserve more empty border.
+4. Reload the web app to see the expanded coverage. The UI automatically ingests the new waypoints without additional code changes.
 
 ## Duplicate audit
 
