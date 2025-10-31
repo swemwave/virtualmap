@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "StanGrad 2nd Floor",
-    "description": "Prototype navigation graph for the MB Wing level 2 immersive tour.",
+    "description": "Automatically generated map data. Review and edit as needed.",
     "floorplan": {
       "image": "assets/images/floorplan-placeholder.svg",
       "width": 1200,
@@ -10,60 +10,1757 @@
   },
   "nodes": [
     {
-      "id": "IMG_20251006_190240_00_003",
-      "title": "Entrance Corridor",
-      "type": "hallway",
-      "description": "Primary hallway leading from the stairwell toward classrooms 201-205.",
-      "image": "IMG_20251006_190240_00_003.jpg",
-      "position": { "x": 0.35, "y": 0.55 },
-      "defaultView": { "pitch": 0, "yaw": 0, "hfov": 110 },
-      "connections": [
-        "IMG_20251006_190342_00_004",
-        "IMG_20251006_190556_00_007"
-      ],
-      "features": ["hallway", "stairwell", "directory"]
-    },
-    {
-      "id": "IMG_20251006_190342_00_004",
-      "title": "Hallway Junction",
+      "id": "001_intersection_waypoint-001",
+      "title": "Intersection 001",
       "type": "intersection",
-      "description": "Intersection that branches toward MB classrooms and the collaborative lounge.",
-      "image": "IMG_20251006_190342_00_004.jpg",
-      "position": { "x": 0.52, "y": 0.50 },
-      "defaultView": { "pitch": 2, "yaw": 45, "hfov": 105 },
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/001_intersection_waypoint-001.jpg",
       "connections": [
-        "IMG_20251006_190240_00_003",
-        "IMG_20251006_190410_00_005",
-        "IMG_20251006_190556_00_007"
+        "002_intersection_waypoint-002"
       ],
-      "features": ["intersection", "classroom corridor"]
+      "features": [
+        "intersection",
+        "branching"
+      ]
     },
     {
-      "id": "IMG_20251006_190410_00_005",
-      "title": "Classroom Entry",
-      "type": "classroom",
-      "description": "View toward classroom MB-207 entrance with signage and seating alcove.",
-      "image": "IMG_20251006_190410_00_005.jpg",
-      "position": { "x": 0.66, "y": 0.47 },
-      "defaultView": { "pitch": -1, "yaw": -30, "hfov": 100 },
+      "id": "002_intersection_waypoint-002",
+      "title": "Intersection 002",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/002_intersection_waypoint-002.jpg",
       "connections": [
-        "IMG_20251006_190342_00_004"
+        "001_intersection_waypoint-001",
+        "003_intersection_waypoint-003"
       ],
-      "features": ["classroom", "door", "signage"]
+      "features": [
+        "intersection",
+        "branching"
+      ]
     },
     {
-      "id": "IMG_20251006_190556_00_007",
-      "title": "Lounge Overlook",
-      "type": "lounge",
-      "description": "Overlook of the central lounge area with natural light and seating clusters.",
-      "image": "IMG_20251006_190556_00_007.jpg",
-      "position": { "x": 0.45, "y": 0.35 },
-      "defaultView": { "pitch": -3, "yaw": 120, "hfov": 95 },
+      "id": "003_intersection_waypoint-003",
+      "title": "Intersection 003",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/003_intersection_waypoint-003.jpg",
       "connections": [
-        "IMG_20251006_190240_00_003",
-        "IMG_20251006_190342_00_004"
+        "002_intersection_waypoint-002",
+        "004_intersection_waypoint-004"
       ],
-      "features": ["lounge", "windows"]
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "004_intersection_waypoint-004",
+      "title": "Intersection 004",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/004_intersection_waypoint-004.jpg",
+      "connections": [
+        "003_intersection_waypoint-003",
+        "005_intersection_waypoint-005"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "005_intersection_waypoint-005",
+      "title": "Intersection 005",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/005_intersection_waypoint-005.jpg",
+      "connections": [
+        "004_intersection_waypoint-004",
+        "006_intersection_waypoint-006"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "006_intersection_waypoint-006",
+      "title": "Intersection 006",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/006_intersection_waypoint-006.jpg",
+      "connections": [
+        "005_intersection_waypoint-005",
+        "007_intersection_waypoint-007"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "007_intersection_waypoint-007",
+      "title": "Intersection 007",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/007_intersection_waypoint-007.jpg",
+      "connections": [
+        "006_intersection_waypoint-006",
+        "008_intersection_waypoint-008"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "008_intersection_waypoint-008",
+      "title": "Intersection 008",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/008_intersection_waypoint-008.jpg",
+      "connections": [
+        "007_intersection_waypoint-007",
+        "009_intersection_waypoint-009"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "009_intersection_waypoint-009",
+      "title": "Intersection 009",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/009_intersection_waypoint-009.jpg",
+      "connections": [
+        "008_intersection_waypoint-008",
+        "010_intersection_waypoint-010"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "010_intersection_waypoint-010",
+      "title": "Intersection 010",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/010_intersection_waypoint-010.jpg",
+      "connections": [
+        "009_intersection_waypoint-009",
+        "011_intersection_waypoint-011"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "011_intersection_waypoint-011",
+      "title": "Intersection 011",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/011_intersection_waypoint-011.jpg",
+      "connections": [
+        "010_intersection_waypoint-010",
+        "012_intersection_waypoint-012"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "012_intersection_waypoint-012",
+      "title": "Intersection 012",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/012_intersection_waypoint-012.jpg",
+      "connections": [
+        "011_intersection_waypoint-011",
+        "013_intersection_waypoint-013"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "013_intersection_waypoint-013",
+      "title": "Intersection 013",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/013_intersection_waypoint-013.jpg",
+      "connections": [
+        "012_intersection_waypoint-012",
+        "014_intersection_waypoint-014"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "014_intersection_waypoint-014",
+      "title": "Intersection 014",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/014_intersection_waypoint-014.jpg",
+      "connections": [
+        "013_intersection_waypoint-013",
+        "015_intersection_waypoint-015"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "015_intersection_waypoint-015",
+      "title": "Intersection 015",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/015_intersection_waypoint-015.jpg",
+      "connections": [
+        "014_intersection_waypoint-014",
+        "016_intersection_waypoint-016"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "016_intersection_waypoint-016",
+      "title": "Intersection 016",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/016_intersection_waypoint-016.jpg",
+      "connections": [
+        "015_intersection_waypoint-015",
+        "017_intersection_waypoint-017"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "017_intersection_waypoint-017",
+      "title": "Intersection 017",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/017_intersection_waypoint-017.jpg",
+      "connections": [
+        "016_intersection_waypoint-016",
+        "018_intersection_waypoint-018"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "018_intersection_waypoint-018",
+      "title": "Intersection 018",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/018_intersection_waypoint-018.jpg",
+      "connections": [
+        "017_intersection_waypoint-017",
+        "019_intersection_waypoint-019"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "019_intersection_waypoint-019",
+      "title": "Intersection 019",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/019_intersection_waypoint-019.jpg",
+      "connections": [
+        "018_intersection_waypoint-018",
+        "020_hallway_waypoint-020"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "020_hallway_waypoint-020",
+      "title": "Hallway 020",
+      "type": "hallway",
+      "description": "Auto-labelled as hallway using CLIP similarity prompts.",
+      "image": "public/assets/images/020_hallway_waypoint-020.jpg",
+      "connections": [
+        "019_intersection_waypoint-019",
+        "021_hallway_waypoint-021"
+      ],
+      "features": [
+        "hallway",
+        "wayfinding"
+      ]
+    },
+    {
+      "id": "021_hallway_waypoint-021",
+      "title": "Hallway 021",
+      "type": "hallway",
+      "description": "Auto-labelled as hallway using CLIP similarity prompts.",
+      "image": "public/assets/images/021_hallway_waypoint-021.jpg",
+      "connections": [
+        "020_hallway_waypoint-020",
+        "022_intersection_waypoint-022"
+      ],
+      "features": [
+        "hallway",
+        "wayfinding"
+      ]
+    },
+    {
+      "id": "022_intersection_waypoint-022",
+      "title": "Intersection 022",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/022_intersection_waypoint-022.jpg",
+      "connections": [
+        "021_hallway_waypoint-021",
+        "023_intersection_waypoint-023"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "023_intersection_waypoint-023",
+      "title": "Intersection 023",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/023_intersection_waypoint-023.jpg",
+      "connections": [
+        "022_intersection_waypoint-022",
+        "024_intersection_waypoint-024"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "024_intersection_waypoint-024",
+      "title": "Intersection 024",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/024_intersection_waypoint-024.jpg",
+      "connections": [
+        "023_intersection_waypoint-023",
+        "025_intersection_waypoint-025"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "025_intersection_waypoint-025",
+      "title": "Intersection 025",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/025_intersection_waypoint-025.jpg",
+      "connections": [
+        "024_intersection_waypoint-024",
+        "026_intersection_waypoint-026"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "026_intersection_waypoint-026",
+      "title": "Intersection 026",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/026_intersection_waypoint-026.jpg",
+      "connections": [
+        "025_intersection_waypoint-025",
+        "027_intersection_waypoint-027"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "027_intersection_waypoint-027",
+      "title": "Intersection 027",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/027_intersection_waypoint-027.jpg",
+      "connections": [
+        "026_intersection_waypoint-026",
+        "028_hallway_waypoint-028"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "028_hallway_waypoint-028",
+      "title": "Hallway 028",
+      "type": "hallway",
+      "description": "Auto-labelled as hallway using CLIP similarity prompts.",
+      "image": "public/assets/images/028_hallway_waypoint-028.jpg",
+      "connections": [
+        "027_intersection_waypoint-027",
+        "029_intersection_waypoint-029"
+      ],
+      "features": [
+        "hallway",
+        "wayfinding"
+      ]
+    },
+    {
+      "id": "029_intersection_waypoint-029",
+      "title": "Intersection 029",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/029_intersection_waypoint-029.jpg",
+      "connections": [
+        "028_hallway_waypoint-028",
+        "030_intersection_waypoint-030"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "030_intersection_waypoint-030",
+      "title": "Intersection 030",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/030_intersection_waypoint-030.jpg",
+      "connections": [
+        "029_intersection_waypoint-029",
+        "031_intersection_waypoint-031"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "031_intersection_waypoint-031",
+      "title": "Intersection 031",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/031_intersection_waypoint-031.jpg",
+      "connections": [
+        "030_intersection_waypoint-030",
+        "032_intersection_waypoint-032"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "032_intersection_waypoint-032",
+      "title": "Intersection 032",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/032_intersection_waypoint-032.jpg",
+      "connections": [
+        "031_intersection_waypoint-031",
+        "033_intersection_waypoint-033"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "033_intersection_waypoint-033",
+      "title": "Intersection 033",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/033_intersection_waypoint-033.jpg",
+      "connections": [
+        "032_intersection_waypoint-032",
+        "034_intersection_waypoint-034"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "034_intersection_waypoint-034",
+      "title": "Intersection 034",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/034_intersection_waypoint-034.jpg",
+      "connections": [
+        "033_intersection_waypoint-033",
+        "035_intersection_waypoint-035"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "035_intersection_waypoint-035",
+      "title": "Intersection 035",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/035_intersection_waypoint-035.jpg",
+      "connections": [
+        "034_intersection_waypoint-034",
+        "036_intersection_waypoint-036"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "036_intersection_waypoint-036",
+      "title": "Intersection 036",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/036_intersection_waypoint-036.jpg",
+      "connections": [
+        "035_intersection_waypoint-035",
+        "037_intersection_waypoint-037"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "037_intersection_waypoint-037",
+      "title": "Intersection 037",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/037_intersection_waypoint-037.jpg",
+      "connections": [
+        "036_intersection_waypoint-036",
+        "038_intersection_waypoint-038"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "038_intersection_waypoint-038",
+      "title": "Intersection 038",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/038_intersection_waypoint-038.jpg",
+      "connections": [
+        "037_intersection_waypoint-037",
+        "039_intersection_waypoint-039"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "039_intersection_waypoint-039",
+      "title": "Intersection 039",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/039_intersection_waypoint-039.jpg",
+      "connections": [
+        "038_intersection_waypoint-038",
+        "040_intersection_waypoint-040"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "040_intersection_waypoint-040",
+      "title": "Intersection 040",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/040_intersection_waypoint-040.jpg",
+      "connections": [
+        "039_intersection_waypoint-039",
+        "041_intersection_waypoint-041"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "041_intersection_waypoint-041",
+      "title": "Intersection 041",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/041_intersection_waypoint-041.jpg",
+      "connections": [
+        "040_intersection_waypoint-040",
+        "042_intersection_waypoint-042"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "042_intersection_waypoint-042",
+      "title": "Intersection 042",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/042_intersection_waypoint-042.jpg",
+      "connections": [
+        "041_intersection_waypoint-041",
+        "043_intersection_waypoint-043"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "043_intersection_waypoint-043",
+      "title": "Intersection 043",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/043_intersection_waypoint-043.jpg",
+      "connections": [
+        "042_intersection_waypoint-042",
+        "044_intersection_waypoint-044"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "044_intersection_waypoint-044",
+      "title": "Intersection 044",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/044_intersection_waypoint-044.jpg",
+      "connections": [
+        "043_intersection_waypoint-043",
+        "045_intersection_waypoint-045"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "045_intersection_waypoint-045",
+      "title": "Intersection 045",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/045_intersection_waypoint-045.jpg",
+      "connections": [
+        "044_intersection_waypoint-044",
+        "046_intersection_waypoint-046"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "046_intersection_waypoint-046",
+      "title": "Intersection 046",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/046_intersection_waypoint-046.jpg",
+      "connections": [
+        "045_intersection_waypoint-045",
+        "047_intersection_waypoint-047"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "047_intersection_waypoint-047",
+      "title": "Intersection 047",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/047_intersection_waypoint-047.jpg",
+      "connections": [
+        "046_intersection_waypoint-046",
+        "048_intersection_waypoint-048"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "048_intersection_waypoint-048",
+      "title": "Intersection 048",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/048_intersection_waypoint-048.jpg",
+      "connections": [
+        "047_intersection_waypoint-047",
+        "049_intersection_waypoint-049"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "049_intersection_waypoint-049",
+      "title": "Intersection 049",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/049_intersection_waypoint-049.jpg",
+      "connections": [
+        "048_intersection_waypoint-048",
+        "050_intersection_waypoint-050"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "050_intersection_waypoint-050",
+      "title": "Intersection 050",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/050_intersection_waypoint-050.jpg",
+      "connections": [
+        "049_intersection_waypoint-049",
+        "051_intersection_waypoint-051"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "051_intersection_waypoint-051",
+      "title": "Intersection 051",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/051_intersection_waypoint-051.jpg",
+      "connections": [
+        "050_intersection_waypoint-050",
+        "052_intersection_waypoint-052"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "052_intersection_waypoint-052",
+      "title": "Intersection 052",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/052_intersection_waypoint-052.jpg",
+      "connections": [
+        "051_intersection_waypoint-051",
+        "053_intersection_waypoint-053"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "053_intersection_waypoint-053",
+      "title": "Intersection 053",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/053_intersection_waypoint-053.jpg",
+      "connections": [
+        "052_intersection_waypoint-052",
+        "054_intersection_waypoint-054"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "054_intersection_waypoint-054",
+      "title": "Intersection 054",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/054_intersection_waypoint-054.jpg",
+      "connections": [
+        "053_intersection_waypoint-053",
+        "055_intersection_waypoint-055"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "055_intersection_waypoint-055",
+      "title": "Intersection 055",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/055_intersection_waypoint-055.jpg",
+      "connections": [
+        "054_intersection_waypoint-054",
+        "056_intersection_waypoint-056"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "056_intersection_waypoint-056",
+      "title": "Intersection 056",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/056_intersection_waypoint-056.jpg",
+      "connections": [
+        "055_intersection_waypoint-055",
+        "057_intersection_waypoint-057"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "057_intersection_waypoint-057",
+      "title": "Intersection 057",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/057_intersection_waypoint-057.jpg",
+      "connections": [
+        "056_intersection_waypoint-056",
+        "058_intersection_waypoint-058"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "058_intersection_waypoint-058",
+      "title": "Intersection 058",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/058_intersection_waypoint-058.jpg",
+      "connections": [
+        "057_intersection_waypoint-057",
+        "059_intersection_waypoint-059"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "059_intersection_waypoint-059",
+      "title": "Intersection 059",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/059_intersection_waypoint-059.jpg",
+      "connections": [
+        "058_intersection_waypoint-058",
+        "060_intersection_waypoint-060"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "060_intersection_waypoint-060",
+      "title": "Intersection 060",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/060_intersection_waypoint-060.jpg",
+      "connections": [
+        "059_intersection_waypoint-059",
+        "061_hallway_waypoint-061"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "061_hallway_waypoint-061",
+      "title": "Hallway 061",
+      "type": "hallway",
+      "description": "Auto-labelled as hallway using CLIP similarity prompts.",
+      "image": "public/assets/images/061_hallway_waypoint-061.jpg",
+      "connections": [
+        "060_intersection_waypoint-060",
+        "062_intersection_waypoint-062"
+      ],
+      "features": [
+        "hallway",
+        "wayfinding"
+      ]
+    },
+    {
+      "id": "062_intersection_waypoint-062",
+      "title": "Intersection 062",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/062_intersection_waypoint-062.jpg",
+      "connections": [
+        "061_hallway_waypoint-061",
+        "063_intersection_waypoint-063"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "063_intersection_waypoint-063",
+      "title": "Intersection 063",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/063_intersection_waypoint-063.jpg",
+      "connections": [
+        "062_intersection_waypoint-062",
+        "064_intersection_waypoint-064"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "064_intersection_waypoint-064",
+      "title": "Intersection 064",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/064_intersection_waypoint-064.jpg",
+      "connections": [
+        "063_intersection_waypoint-063",
+        "065_hallway_waypoint-065"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "065_hallway_waypoint-065",
+      "title": "Hallway 065",
+      "type": "hallway",
+      "description": "Auto-labelled as hallway using CLIP similarity prompts.",
+      "image": "public/assets/images/065_hallway_waypoint-065.jpg",
+      "connections": [
+        "064_intersection_waypoint-064",
+        "066_intersection_waypoint-066"
+      ],
+      "features": [
+        "hallway",
+        "wayfinding"
+      ]
+    },
+    {
+      "id": "066_intersection_waypoint-066",
+      "title": "Intersection 066",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/066_intersection_waypoint-066.jpg",
+      "connections": [
+        "065_hallway_waypoint-065",
+        "067_intersection_waypoint-067"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "067_intersection_waypoint-067",
+      "title": "Intersection 067",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/067_intersection_waypoint-067.jpg",
+      "connections": [
+        "066_intersection_waypoint-066",
+        "068_intersection_waypoint-068"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "068_intersection_waypoint-068",
+      "title": "Intersection 068",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/068_intersection_waypoint-068.jpg",
+      "connections": [
+        "067_intersection_waypoint-067",
+        "069_intersection_waypoint-069"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "069_intersection_waypoint-069",
+      "title": "Intersection 069",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/069_intersection_waypoint-069.jpg",
+      "connections": [
+        "068_intersection_waypoint-068",
+        "070_intersection_waypoint-070"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "070_intersection_waypoint-070",
+      "title": "Intersection 070",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/070_intersection_waypoint-070.jpg",
+      "connections": [
+        "069_intersection_waypoint-069",
+        "071_intersection_waypoint-071"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "071_intersection_waypoint-071",
+      "title": "Intersection 071",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/071_intersection_waypoint-071.jpg",
+      "connections": [
+        "070_intersection_waypoint-070",
+        "072_intersection_waypoint-072"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "072_intersection_waypoint-072",
+      "title": "Intersection 072",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/072_intersection_waypoint-072.jpg",
+      "connections": [
+        "071_intersection_waypoint-071",
+        "073_intersection_waypoint-073"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "073_intersection_waypoint-073",
+      "title": "Intersection 073",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/073_intersection_waypoint-073.jpg",
+      "connections": [
+        "072_intersection_waypoint-072",
+        "074_intersection_waypoint-074"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "074_intersection_waypoint-074",
+      "title": "Intersection 074",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/074_intersection_waypoint-074.jpg",
+      "connections": [
+        "073_intersection_waypoint-073",
+        "075_intersection_waypoint-075"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "075_intersection_waypoint-075",
+      "title": "Intersection 075",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/075_intersection_waypoint-075.jpg",
+      "connections": [
+        "074_intersection_waypoint-074",
+        "076_intersection_waypoint-076"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "076_intersection_waypoint-076",
+      "title": "Intersection 076",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/076_intersection_waypoint-076.jpg",
+      "connections": [
+        "075_intersection_waypoint-075",
+        "077_intersection_waypoint-077"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "077_intersection_waypoint-077",
+      "title": "Intersection 077",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/077_intersection_waypoint-077.jpg",
+      "connections": [
+        "076_intersection_waypoint-076",
+        "078_intersection_waypoint-078"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "078_intersection_waypoint-078",
+      "title": "Intersection 078",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/078_intersection_waypoint-078.jpg",
+      "connections": [
+        "077_intersection_waypoint-077",
+        "079_intersection_waypoint-079"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "079_intersection_waypoint-079",
+      "title": "Intersection 079",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/079_intersection_waypoint-079.jpg",
+      "connections": [
+        "078_intersection_waypoint-078",
+        "080_intersection_waypoint-080"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "080_intersection_waypoint-080",
+      "title": "Intersection 080",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/080_intersection_waypoint-080.jpg",
+      "connections": [
+        "079_intersection_waypoint-079",
+        "081_intersection_waypoint-081"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "081_intersection_waypoint-081",
+      "title": "Intersection 081",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/081_intersection_waypoint-081.jpg",
+      "connections": [
+        "080_intersection_waypoint-080",
+        "082_intersection_waypoint-082"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "082_intersection_waypoint-082",
+      "title": "Intersection 082",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/082_intersection_waypoint-082.jpg",
+      "connections": [
+        "081_intersection_waypoint-081",
+        "083_intersection_waypoint-083"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "083_intersection_waypoint-083",
+      "title": "Intersection 083",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/083_intersection_waypoint-083.jpg",
+      "connections": [
+        "082_intersection_waypoint-082",
+        "084_intersection_waypoint-084"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "084_intersection_waypoint-084",
+      "title": "Intersection 084",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/084_intersection_waypoint-084.jpg",
+      "connections": [
+        "083_intersection_waypoint-083",
+        "085_intersection_waypoint-085"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "085_intersection_waypoint-085",
+      "title": "Intersection 085",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/085_intersection_waypoint-085.jpg",
+      "connections": [
+        "084_intersection_waypoint-084",
+        "086_intersection_waypoint-086"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "086_intersection_waypoint-086",
+      "title": "Intersection 086",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/086_intersection_waypoint-086.jpg",
+      "connections": [
+        "085_intersection_waypoint-085",
+        "087_intersection_waypoint-087"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "087_intersection_waypoint-087",
+      "title": "Intersection 087",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/087_intersection_waypoint-087.jpg",
+      "connections": [
+        "086_intersection_waypoint-086",
+        "088_intersection_waypoint-088"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "088_intersection_waypoint-088",
+      "title": "Intersection 088",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/088_intersection_waypoint-088.jpg",
+      "connections": [
+        "087_intersection_waypoint-087",
+        "089_intersection_waypoint-089"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "089_intersection_waypoint-089",
+      "title": "Intersection 089",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/089_intersection_waypoint-089.jpg",
+      "connections": [
+        "088_intersection_waypoint-088",
+        "090_intersection_waypoint-090"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "090_intersection_waypoint-090",
+      "title": "Intersection 090",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/090_intersection_waypoint-090.jpg",
+      "connections": [
+        "089_intersection_waypoint-089",
+        "091_intersection_waypoint-091"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "091_intersection_waypoint-091",
+      "title": "Intersection 091",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/091_intersection_waypoint-091.jpg",
+      "connections": [
+        "090_intersection_waypoint-090",
+        "092_intersection_waypoint-092"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "092_intersection_waypoint-092",
+      "title": "Intersection 092",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/092_intersection_waypoint-092.jpg",
+      "connections": [
+        "091_intersection_waypoint-091",
+        "093_intersection_waypoint-093"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "093_intersection_waypoint-093",
+      "title": "Intersection 093",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/093_intersection_waypoint-093.jpg",
+      "connections": [
+        "092_intersection_waypoint-092",
+        "094_intersection_waypoint-094"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "094_intersection_waypoint-094",
+      "title": "Intersection 094",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/094_intersection_waypoint-094.jpg",
+      "connections": [
+        "093_intersection_waypoint-093",
+        "095_intersection_waypoint-095"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "095_intersection_waypoint-095",
+      "title": "Intersection 095",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/095_intersection_waypoint-095.jpg",
+      "connections": [
+        "094_intersection_waypoint-094",
+        "096_intersection_waypoint-096"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "096_intersection_waypoint-096",
+      "title": "Intersection 096",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/096_intersection_waypoint-096.jpg",
+      "connections": [
+        "095_intersection_waypoint-095",
+        "097_intersection_waypoint-097"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "097_intersection_waypoint-097",
+      "title": "Intersection 097",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/097_intersection_waypoint-097.jpg",
+      "connections": [
+        "096_intersection_waypoint-096",
+        "098_intersection_waypoint-098"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "098_intersection_waypoint-098",
+      "title": "Intersection 098",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/098_intersection_waypoint-098.jpg",
+      "connections": [
+        "097_intersection_waypoint-097",
+        "099_intersection_waypoint-099"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "099_intersection_waypoint-099",
+      "title": "Intersection 099",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/099_intersection_waypoint-099.jpg",
+      "connections": [
+        "098_intersection_waypoint-098",
+        "100_intersection_waypoint-100"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "100_intersection_waypoint-100",
+      "title": "Intersection 100",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/100_intersection_waypoint-100.jpg",
+      "connections": [
+        "099_intersection_waypoint-099",
+        "101_intersection_waypoint-101"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "101_intersection_waypoint-101",
+      "title": "Intersection 101",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/101_intersection_waypoint-101.jpg",
+      "connections": [
+        "100_intersection_waypoint-100",
+        "102_intersection_waypoint-102"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "102_intersection_waypoint-102",
+      "title": "Intersection 102",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/102_intersection_waypoint-102.jpg",
+      "connections": [
+        "101_intersection_waypoint-101",
+        "103_intersection_waypoint-103"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "103_intersection_waypoint-103",
+      "title": "Intersection 103",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/103_intersection_waypoint-103.jpg",
+      "connections": [
+        "102_intersection_waypoint-102",
+        "104_intersection_waypoint-104"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "104_intersection_waypoint-104",
+      "title": "Intersection 104",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/104_intersection_waypoint-104.jpg",
+      "connections": [
+        "103_intersection_waypoint-103",
+        "105_intersection_waypoint-105"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "105_intersection_waypoint-105",
+      "title": "Intersection 105",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/105_intersection_waypoint-105.jpg",
+      "connections": [
+        "104_intersection_waypoint-104",
+        "106_intersection_waypoint-106"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "106_intersection_waypoint-106",
+      "title": "Intersection 106",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/106_intersection_waypoint-106.jpg",
+      "connections": [
+        "105_intersection_waypoint-105",
+        "107_intersection_waypoint-107"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "107_intersection_waypoint-107",
+      "title": "Intersection 107",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/107_intersection_waypoint-107.jpg",
+      "connections": [
+        "106_intersection_waypoint-106",
+        "108_intersection_waypoint-108"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "108_intersection_waypoint-108",
+      "title": "Intersection 108",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/108_intersection_waypoint-108.jpg",
+      "connections": [
+        "107_intersection_waypoint-107",
+        "109_intersection_waypoint-109"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "109_intersection_waypoint-109",
+      "title": "Intersection 109",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/109_intersection_waypoint-109.jpg",
+      "connections": [
+        "108_intersection_waypoint-108",
+        "110_intersection_waypoint-110"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "110_intersection_waypoint-110",
+      "title": "Intersection 110",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/110_intersection_waypoint-110.jpg",
+      "connections": [
+        "109_intersection_waypoint-109",
+        "111_intersection_waypoint-111"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "111_intersection_waypoint-111",
+      "title": "Intersection 111",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/111_intersection_waypoint-111.jpg",
+      "connections": [
+        "110_intersection_waypoint-110",
+        "112_intersection_waypoint-112"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "112_intersection_waypoint-112",
+      "title": "Intersection 112",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/112_intersection_waypoint-112.jpg",
+      "connections": [
+        "111_intersection_waypoint-111",
+        "113_intersection_waypoint-113"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "113_intersection_waypoint-113",
+      "title": "Intersection 113",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/113_intersection_waypoint-113.jpg",
+      "connections": [
+        "112_intersection_waypoint-112",
+        "114_intersection_waypoint-114"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "114_intersection_waypoint-114",
+      "title": "Intersection 114",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/114_intersection_waypoint-114.jpg",
+      "connections": [
+        "113_intersection_waypoint-113",
+        "115_intersection_waypoint-115"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "115_intersection_waypoint-115",
+      "title": "Intersection 115",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/115_intersection_waypoint-115.jpg",
+      "connections": [
+        "114_intersection_waypoint-114",
+        "116_intersection_waypoint-116"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "116_intersection_waypoint-116",
+      "title": "Intersection 116",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/116_intersection_waypoint-116.jpg",
+      "connections": [
+        "115_intersection_waypoint-115",
+        "117_intersection_waypoint-117"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
+    },
+    {
+      "id": "117_intersection_waypoint-117",
+      "title": "Intersection 117",
+      "type": "intersection",
+      "description": "Auto-labelled as intersection using CLIP similarity prompts.",
+      "image": "public/assets/images/117_intersection_waypoint-117.jpg",
+      "connections": [
+        "116_intersection_waypoint-116"
+      ],
+      "features": [
+        "intersection",
+        "branching"
+      ]
     }
   ]
 }
