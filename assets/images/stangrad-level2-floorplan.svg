@@ -1,0 +1,51 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' aria-labelledby='title desc'>
+  <title id='title'>StanGrad level 2 floorplan</title>
+  <desc id='desc'>Simplified schematic of the captured corridor on level two with the camera path highlighted.</desc>
+  <defs>
+    <linearGradient id='bgGradient' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#0f172a'/>
+      <stop offset='100%' stop-color='#1e293b'/>
+    </linearGradient>
+    <linearGradient id='pathGradient' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#38bdf8'/>
+      <stop offset='100%' stop-color='#0ea5e9'/>
+    </linearGradient>
+    <filter id='glow' x='-20%' y='-20%' width='140%' height='140%'>
+      <feGaussianBlur stdDeviation='1.5' result='coloredBlur'/>
+      <feMerge>
+        <feMergeNode in='coloredBlur'/>
+        <feMergeNode in='SourceGraphic'/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x='0' y='0' width='100' height='100' fill='url(#bgGradient)' rx='4' ry='4'/>
+  <g opacity='0.35' stroke='#38bdf8' stroke-width='0.2'>
+    <path d='M0,10 H100' />
+    <path d='M0,30 H100' />
+    <path d='M0,50 H100' />
+    <path d='M0,70 H100' />
+    <path d='M0,90 H100' />
+    <path d='M10,0 V100' />
+    <path d='M30,0 V100' />
+    <path d='M50,0 V100' />
+    <path d='M70,0 V100' />
+    <path d='M90,0 V100' />
+  </g>
+  <path d='M5.000,5.000 L12.500,5.000 L20.000,5.000 L27.500,5.000 L35.000,5.000 L42.500,5.000 L50.000,5.000 L57.500,5.000 L65.000,5.000 L72.500,5.000 L80.000,5.000 L87.500,5.000 L95.000,5.000 L95.000,16.250 L87.500,16.250 L80.000,16.250 L72.500,16.250 L65.000,16.250 L57.500,16.250 L50.000,16.250 L42.500,16.250 L35.000,16.250 L27.500,16.250 L20.000,16.250 L12.500,16.250 L5.000,16.250 L5.000,27.500 L12.500,27.500 L20.000,27.500 L27.500,27.500 L35.000,27.500 L42.500,27.500 L50.000,27.500 L57.500,27.500 L65.000,27.500 L72.500,27.500 L80.000,27.500 L87.500,27.500 L95.000,27.500 L95.000,38.750 L87.500,38.750 L80.000,38.750 L72.500,38.750 L65.000,38.750 L57.500,38.750 L50.000,38.750 L42.500,38.750 L35.000,38.750 L27.500,38.750 L20.000,38.750 L12.500,38.750 L5.000,38.750 L5.000,50.000 L12.500,50.000 L20.000,50.000 L27.500,50.000 L35.000,50.000 L42.500,50.000 L50.000,50.000 L57.500,50.000 L65.000,50.000 L72.500,50.000 L80.000,50.000 L87.500,50.000 L95.000,50.000 L95.000,61.250 L87.500,61.250 L80.000,61.250 L72.500,61.250 L65.000,61.250 L57.500,61.250 L50.000,61.250 L42.500,61.250 L35.000,61.250 L27.500,61.250 L20.000,61.250 L12.500,61.250 L5.000,61.250 L5.000,72.500 L12.500,72.500 L20.000,72.500 L27.500,72.500 L35.000,72.500 L42.500,72.500 L50.000,72.500 L57.500,72.500 L65.000,72.500 L72.500,72.500 L80.000,72.500 L87.500,72.500 L95.000,72.500 L95.000,83.750 L87.500,83.750 L80.000,83.750 L72.500,83.750 L65.000,83.750 L57.500,83.750 L50.000,83.750 L42.500,83.750 L35.000,83.750 L27.500,83.750 L20.000,83.750 L12.500,83.750 L5.000,83.750 L5.000,95.000 L12.500,95.000 L20.000,95.000 L27.500,95.000 L35.000,95.000 L42.500,95.000 L50.000,95.000 L57.500,95.000 L65.000,95.000 L72.500,95.000 L80.000,95.000 L87.500,95.000 L95.000,95.000' fill='none' stroke='url(#pathGradient)' stroke-width='1.5' filter='url(#glow)' stroke-linecap='round' stroke-linejoin='round'/>
+  <g fill='#38bdf8' stroke='#0f172a' stroke-width='0.6'>
+    <circle cx='5.000' cy='5.000' r='1.4' />
+    <circle cx='95.000' cy='5.000' r='1.4' />
+    <circle cx='12.500' cy='16.250' r='1.4' />
+    <circle cx='80.000' cy='27.500' r='1.4' />
+    <circle cx='27.500' cy='38.750' r='1.4' />
+    <circle cx='50.000' cy='50.000' r='1.4' />
+    <circle cx='65.000' cy='50.000' r='1.4' />
+    <circle cx='42.500' cy='61.250' r='1.4' />
+    <circle cx='50.000' cy='72.500' r='1.4' />
+    <circle cx='57.500' cy='83.750' r='1.4' />
+    <circle cx='35.000' cy='95.000' r='1.4' />
+    <circle cx='95.000' cy='95.000' r='1.4' />
+  </g>
+  <text x='5' y='12' fill='#e2e8f0' font-size='4' font-family='Inter, system-ui, sans-serif'>StanGrad Campus · Level 2</text>
+  <text x='5' y='18' fill='#94a3b8' font-size='2.6' font-family='Inter, system-ui, sans-serif'>Camera sweep captured 117 waypoints along the MB wing corridor.</text>
+</svg>

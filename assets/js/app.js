@@ -5,12 +5,16 @@ const connectionsContainer = document.getElementById('connections');
 const metadataPanel = document.getElementById('metadataPanel');
 const floorplanImage = document.getElementById('floorplanImage');
 const floorplanMarkers = document.getElementById('floorplanMarkers');
+const floorplanContainer = document.getElementById('floorplan');
+const floorplanGraph = document.getElementById('floorplanGraph');
+const floorplanSummary = document.getElementById('floorplanSummary');
 
 let viewer;
 let data;
 let nodes = [];
 let nodesById = new Map();
 let currentNodeId;
+let floorplanDimensions = { width: 1, height: 1 };
 
 init();
 
@@ -21,7 +25,7 @@ async function init() {
       throw new Error(`Failed to load map data: ${response.status} ${response.statusText}`);
     }
     data = await response.json();
-    nodes = data.nodes ?? [];
+    nodes = (data.nodes ?? []).slice().sort((a, b) => (a.sequence ?? 0) - (b.sequence ?? 0));
     if (!nodes.length) {
       renderError('The panorama map does not contain any nodes yet. Add entries to data/panorama-map.json.');
       return;
@@ -128,11 +132,17 @@ function updateMetadata() {
   const features = Array.isArray(node.features) && node.features.length
     ? `<p class="meta__features"><strong>Tags:</strong> ${node.features.join(', ')}</p>`
     : '';
+  const levelLabel = node.level ? `<p class="meta__level">Level ${node.level}</p>` : '';
+  const sequenceLabel = typeof node.sequence === 'number'
+    ? `<p class="meta__sequence">Panorama ${node.sequence} of ${nodes.length}</p>`
+    : '';
 
   metadataPanel.innerHTML = `
     <h2 class="meta__title">${node.title ?? node.id}</h2>
     <p class="meta__type">${formatType(node.type)}</p>
     <p class="meta__description">${node.description ?? 'No description provided yet.'}</p>
+    ${levelLabel}
+    ${sequenceLabel}
     ${features}
   `;
 }
@@ -160,17 +170,37 @@ function renderConnections() {
 }
 
 function setupFloorplan(floorplan) {
+  const fallbackSrc = 'assets/images/floorplan-placeholder.svg';
+  const fallbackAlt = 'Floor plan placeholder';
+  floorplanDimensions = { width: 1, height: 1 };
   if (!floorplan) {
-    floorplanImage.src = 'assets/images/floorplan-placeholder.svg';
-    floorplanImage.alt = 'Floor plan placeholder';
+    floorplanImage.src = fallbackSrc;
+    floorplanImage.alt = fallbackAlt;
+    floorplanContainer?.setAttribute('aria-label', 'Top-down map placeholder');
+    updateFloorplanSummary(null);
+    clearFloorplanGraph();
     return;
   }
-  floorplanImage.src = floorplan.image ?? 'assets/images/floorplan-placeholder.svg';
+
+  const width = Number(floorplan.width) || 100;
+  const height = Number(floorplan.height) || 100;
+  floorplanDimensions = { width, height };
+  floorplanImage.src = floorplan.image ?? fallbackSrc;
   floorplanImage.alt = floorplan.alt ?? 'Floor plan overview';
+  const levelInfo = Array.isArray(floorplan.levels) && floorplan.levels.length
+    ? floorplan.levels.map((level) => level.label ?? `Level ${level.floor ?? ''}`).join(', ')
+    : null;
+  const ariaLabel = levelInfo
+    ? `Top-down map of ${levelInfo}`
+    : 'Top-down map of the current floor';
+  floorplanContainer?.setAttribute('aria-label', ariaLabel);
+  updateFloorplanSummary(floorplan);
+  configureFloorplanGraph(width, height);
 }
 
 function createMarkers() {
   floorplanMarkers.innerHTML = '';
+  createFloorplanEdges();
   const filtered = getFilteredNodes();
   for (const node of nodes) {
     if (!node.position || typeof node.position.x !== 'number' || typeof node.position.y !== 'number') {
@@ -193,15 +223,18 @@ function createMarkers() {
 }
 
 function highlightMarker(nodeId) {
+  let active = false;
   for (const marker of floorplanMarkers.querySelectorAll('.floorplan__marker')) {
     if (marker.dataset.nodeId === nodeId) {
       marker.classList.add('floorplan__marker--active');
       marker.setAttribute('aria-current', 'true');
+      active = true;
     } else {
       marker.classList.remove('floorplan__marker--active');
       marker.removeAttribute('aria-current');
     }
   }
+  highlightEdges(active ? nodeId : null);
 }
 
 function createSceneFromNode(node) {
@@ -249,6 +282,79 @@ function renderNodeOptions(filter) {
 function formatType(type) {
   if (!type) return 'Uncategorized location';
   return `${type.charAt(0).toUpperCase()}${type.slice(1)} node`;
+}
+
+function toFloorplanCoordinates(position) {
+  return {
+    x: position.x * floorplanDimensions.width,
+    y: position.y * floorplanDimensions.height
+  };
+}
+
+function configureFloorplanGraph(width, height) {
+  if (!floorplanGraph) return;
+  floorplanGraph.setAttribute('viewBox', `0 0 ${width} ${height}`);
+  clearFloorplanGraph();
+}
+
+function clearFloorplanGraph() {
+  if (!floorplanGraph) return;
+  floorplanGraph.innerHTML = '';
+}
+
+function createFloorplanEdges() {
+  if (!floorplanGraph) return;
+  clearFloorplanGraph();
+  const rendered = new Set();
+  for (const node of nodes) {
+    if (!node.position || !Array.isArray(node.connections)) continue;
+    const source = toFloorplanCoordinates(node.position);
+    for (const targetId of node.connections) {
+      const key = [node.id, targetId].sort().join('|');
+      if (rendered.has(key)) continue;
+      const target = nodesById.get(targetId);
+      if (!target?.position) continue;
+      const targetPoint = toFloorplanCoordinates(target.position);
+      const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+      line.setAttribute('x1', source.x);
+      line.setAttribute('y1', source.y);
+      line.setAttribute('x2', targetPoint.x);
+      line.setAttribute('y2', targetPoint.y);
+      line.classList.add('floorplan__edge');
+      line.dataset.edgeKey = key;
+      floorplanGraph.appendChild(line);
+      rendered.add(key);
+    }
+  }
+}
+
+function highlightEdges(nodeId) {
+  if (!floorplanGraph) return;
+  for (const edge of floorplanGraph.querySelectorAll('.floorplan__edge')) {
+    edge.classList.remove('floorplan__edge--active');
+  }
+  if (!nodeId) return;
+  const node = nodesById.get(nodeId);
+  if (!node?.connections) return;
+  for (const targetId of node.connections) {
+    const key = [node.id, targetId].sort().join('|');
+    const edge = floorplanGraph.querySelector(`[data-edge-key="${key}"]`);
+    edge?.classList.add('floorplan__edge--active');
+  }
+}
+
+function updateFloorplanSummary(floorplan) {
+  if (!floorplanSummary) return;
+  if (!floorplan) {
+    floorplanSummary.textContent = 'Floor plan unavailable. Add a floorplan object to the panorama map metadata.';
+    return;
+  }
+  const levelInfo = Array.isArray(floorplan.levels) && floorplan.levels.length
+    ? floorplan.levels.map((level) => level.label ?? `Level ${level.floor ?? ''}`).join(', ')
+    : null;
+  const count = nodes.length;
+  const label = levelInfo ? `${levelInfo}` : 'Floor overview';
+  floorplanSummary.textContent = `${label} · ${count} panorama${count === 1 ? '' : 's'}`;
 }
 
 function renderError(message) {
