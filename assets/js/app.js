@@ -226,10 +226,12 @@ function computeAlignedYaw(prevId, currId, fallbackYaw) {
   const currPos = getWorldPosition(currId);
   if (!prevPos || !currPos) return fallbackYaw;
   const dx = currPos.x - prevPos.x;
-  const dy = -(currPos.y - prevPos.y);
+  const dy = currPos.y - prevPos.y;
   const angleRad = Math.atan2(dy, dx);
   let yaw = angleRad * 180 / Math.PI; // degrees
   yaw = (yaw % 360 + 360) % 360;
+  // Point camera back toward previous location (add 180 degrees)
+  yaw = (yaw + 180) % 360;
   return worldYawToViewerYaw(yaw);
 }
 
@@ -306,7 +308,13 @@ function updateDirectionController() {
     if (!button) continue;
     if (list.length) {
       button.disabled = false;
-      button.title = list.map((entry) => entry.label || entry.id).join(', ');
+      const currentIndex = directionIndices[direction] ?? 0;
+      const currentEntry = list[currentIndex % list.length];
+      const destinationNode = nodesById.get(currentEntry.id);
+      const shortLabel = destinationNode?.title?.replace(/^(Intersection|Hallway)\s+/i, '') || currentEntry.id;
+      button.title = list.length > 1
+        ? `${shortLabel} (${currentIndex + 1}/${list.length})\nClick again to cycle: ${list.map(e => e.label).join(', ')}`
+        : shortLabel;
       if (list.length > 1) {
         button.dataset.count = String(list.length);
       } else {
@@ -335,9 +343,10 @@ function categorizeNeighbors(curr, neighbors, viewYaw) {
     const delta = deltaYaw(viewYaw, yawTo);
     const abs = Math.abs(delta);
     let bucket;
-    if (abs <= 45) {
+    // More generous forward/back thresholds
+    if (abs <= 55) {
       bucket = 'forward';
-    } else if (abs >= 135) {
+    } else if (abs >= 125) {
       bucket = 'back';
     } else if (delta > 0) {
       bucket = 'right';
@@ -350,6 +359,7 @@ function categorizeNeighbors(curr, neighbors, viewYaw) {
     result[bucket].push({ id: nb.id, label, delta, yaw: yawTo });
   }
 
+  // Sort by absolute delta - closest to the direction first
   for (const dir of Object.keys(result)) {
     result[dir].sort((a, b) => Math.abs(a.delta) - Math.abs(b.delta));
   }
@@ -360,10 +370,18 @@ function categorizeNeighbors(curr, neighbors, viewYaw) {
 function useDirection(direction) {
   const entries = directionBuckets[direction] || [];
   if (!entries.length) return;
+
+  // Get current index, navigate to that option, then increment for next time
   const currentIndex = directionIndices[direction] ?? 0;
   const entry = entries[currentIndex % entries.length];
-  directionIndices[direction] = (currentIndex + 1) % entries.length;
+
+  // Navigate to the selected node
   selectNode(entry.id, { prevId: currentNodeId });
+
+  // Increment index for next click (if multiple options)
+  if (entries.length > 1) {
+    directionIndices[direction] = (currentIndex + 1) % entries.length;
+  }
 }
 
 function normalizeYaw(yaw) {
@@ -578,7 +596,9 @@ function computeYawBetween(fromId, toId) {
   const toPos = getWorldPosition(toId);
   if (!fromPos || !toPos) return 0;
   const dx = toPos.x - fromPos.x;
-  const dy = -(toPos.y - fromPos.y); // invert axis because data Y grows downward
+  const dy = toPos.y - fromPos.y; // Y increases downward in our coordinate system
+  // In panorama, 0° = East, 90° = South, 180° = West, 270° = North
+  // atan2(dy, dx) gives us the angle from East, which is what we want
   let yaw = Math.atan2(dy, dx) * 180 / Math.PI;
   yaw = (yaw % 360 + 360) % 360;
   return yaw;
@@ -624,22 +644,55 @@ function computeGraphLayout(nodeList) {
   }
 
   const positions = new Map();
+  const baseSize = 100;
+
+  // Check if all nodes have explicit positions
+  const hasExplicitPositions = nodeList.every(
+    node => node.position && Number.isFinite(node.position.x) && Number.isFinite(node.position.y)
+  );
+
+  if (hasExplicitPositions) {
+    // Use explicit positions directly without force-directed layout
+    nodeList.forEach((node) => {
+      positions.set(node.id, {
+        x: node.position.x * baseSize,
+        y: node.position.y * baseSize  // No flip - use positions as-is
+      });
+    });
+
+    // Calculate dimensions from actual positions
+    let minX = Infinity, maxX = -Infinity;
+    let minY = Infinity, maxY = -Infinity;
+    positions.forEach((pos) => {
+      if (pos.x < minX) minX = pos.x;
+      if (pos.x > maxX) maxX = pos.x;
+      if (pos.y < minY) minY = pos.y;
+      if (pos.y > maxY) maxY = pos.y;
+    });
+
+    const spanX = maxX - minX || 1;
+    const spanY = maxY - minY || 1;
+    const padding = baseSize * 0.05;
+
+    return {
+      positions,
+      dimensions: {
+        width: spanX + padding * 2,
+        height: spanY + padding * 2
+      }
+    };
+  }
+
+  // Fall back to force-directed layout for nodes without positions
   const anchors = new Map();
   const nodeCount = nodeList.length;
   const angleStep = (2 * Math.PI) / nodeCount;
-  const baseSize = 100;
   const jitter = () => (Math.random() - 0.5) * 1.5;
+
   nodeList.forEach((node, index) => {
-    let anchorX;
-    let anchorY;
-    if (node.position && Number.isFinite(node.position.x) && Number.isFinite(node.position.y)) {
-      anchorX = node.position.x * baseSize;
-      anchorY = (1 - node.position.y) * baseSize; // flip so higher Y is higher on map
-    } else {
-      const angle = angleStep * index;
-      anchorX = Math.cos(angle) * (baseSize * 0.35) + baseSize * 0.5;
-      anchorY = Math.sin(angle) * (baseSize * 0.35) + baseSize * 0.5;
-    }
+    const angle = angleStep * index;
+    const anchorX = Math.cos(angle) * (baseSize * 0.35) + baseSize * 0.5;
+    const anchorY = Math.sin(angle) * (baseSize * 0.35) + baseSize * 0.5;
     anchors.set(node.id, { x: anchorX, y: anchorY });
     positions.set(node.id, {
       x: anchorX + jitter(),
@@ -682,15 +735,15 @@ function computeGraphLayout(nodeList) {
         dx /= dist;
         dy /= dist;
         const dispA = disps.get(nodeA.id);
-      const dispB = disps.get(nodeB.id);
-      dispA.x += dx * repulse;
-      dispA.y += dy * repulse;
-      dispB.x -= dx * repulse;
-      dispB.y -= dy * repulse;
+        const dispB = disps.get(nodeB.id);
+        dispA.x += dx * repulse;
+        dispA.y += dy * repulse;
+        dispB.x -= dx * repulse;
+        dispB.y -= dy * repulse;
+      }
     }
-  }
 
-  for (const [aId, bId] of edges) {
+    for (const [aId, bId] of edges) {
       const posA = positions.get(aId);
       const posB = positions.get(bId);
       let dx = posA.x - posB.x;
@@ -707,45 +760,21 @@ function computeGraphLayout(nodeList) {
       dispB.y += dy * attract;
     }
 
-  for (const node of nodeList) {
-    const disp = disps.get(node.id);
-    const anchor = anchors.get(node.id);
-    if (anchor) {
+    for (const node of nodeList) {
+      const disp = disps.get(node.id);
+      const anchor = anchors.get(node.id);
+      if (anchor) {
+        const pos = positions.get(node.id);
+        disp.x += (anchor.x - pos.x) * anchorStrength;
+        disp.y += (anchor.y - pos.y) * anchorStrength;
+      }
+      let dispLength = Math.hypot(disp.x, disp.y) || 0.0001;
       const pos = positions.get(node.id);
-      disp.x += (anchor.x - pos.x) * anchorStrength;
-      disp.y += (anchor.y - pos.y) * anchorStrength;
+      pos.x += (disp.x / dispLength) * Math.min(dispLength, temperature);
+      pos.y += (disp.y / dispLength) * Math.min(dispLength, temperature);
     }
-    let dispLength = Math.hypot(disp.x, disp.y) || 0.0001;
-    const pos = positions.get(node.id);
-    pos.x += (disp.x / dispLength) * Math.min(dispLength, temperature);
-    pos.y += (disp.y / dispLength) * Math.min(dispLength, temperature);
-  }
 
     temperature *= 0.92;
-  }
-
-  // Rotate layout so that the first sequence edge points East for consistency
-  const root = nodeList[0];
-  const rootPos = positions.get(root.id);
-  if (rootPos) {
-    const nextId = Array.isArray(root.connections)
-      ? root.connections.find((id) => positions.has(id))
-      : null;
-    if (nextId) {
-      const nextPos = positions.get(nextId);
-      const dx = nextPos.x - rootPos.x;
-      const dy = nextPos.y - rootPos.y;
-      const currentAngle = Math.atan2(dy, dx);
-      const rotateBy = -currentAngle;
-      positions.forEach((pos) => {
-        const x = pos.x - rootPos.x;
-        const y = pos.y - rootPos.y;
-        const rotatedX = x * Math.cos(rotateBy) - y * Math.sin(rotateBy);
-        const rotatedY = x * Math.sin(rotateBy) + y * Math.cos(rotateBy);
-        pos.x = rotatedX + rootPos.x;
-        pos.y = rotatedY + rootPos.y;
-      });
-    }
   }
 
   let minX = Infinity;
